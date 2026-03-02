@@ -1,17 +1,17 @@
-# Hidden Markov Model Local Ancestry Inference
+# Hidden Markov Model Local Ancestry Inference (HMM LAI)
 
 ### UCSD CSE 284 Winter 2026
 
 ### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
 
-## PROJECT OVERVIEW
+## Project Overview
 
 This repository implements an end-to-end Hidden Markov Model (HMM) approach for local ancestry inference (LAI). The objective is to infer ancestry at each genomic position for admixed indivudals using phased genotype data and ancestry-specific reference panels.
 
 Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4), published by Browning et al., 2023 in The American Journal of Human Genetics. Their model treats ancestry along a chromosome as a sequence of hidden states (AFR/EUR/EAS), with transitions driven by recombination distance and emissions based on ancestry-specific allele frequencies estimated from a reference panel.
 
 ---
-## INSTALLATION
+## Installing our HMM LAI Tool
 
 ## 1. Clone this github repository
 ```bash
