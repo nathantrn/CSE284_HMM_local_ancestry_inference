@@ -163,12 +163,12 @@ Our toy simulation is provided for ground-truth validation to ensure correct imp
 
 ---
 
-#FOR PEER REVIEW
+# FOR PEER REVIEW
 We would appreciate feedback on the following
 * readability of the instructions for installing the tool, our goals & metrics
 * We were thinking of using only 1000 Genomes data, but if we are using 1000 Genomes for our reference and test, we were thinking of using AMR individuals (who are admixed with AFR, EUR, and possibly EAS), but these individuals also have AMR specific ancestry. How could we alter our approach to accomodate this, or should we stick with using HGDP for our reference and 1000 Genomes for our test?
 
-#REMAINING TASKS
+# REMAINING TASKS
 * Implement out HMM LAI using Pomegranate forward backward algorithm
 * Create our toy example and run our HMM LAI to assess correctness of implementation
 * Run FLARE default parameters on our test data
