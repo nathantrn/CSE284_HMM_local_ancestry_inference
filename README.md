@@ -84,14 +84,14 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
 
-###Variant Filtering
+### Variant Filtering
 In line with Browning et al., 2023, we:
 * excluded variants that were not bi-allelic SNPs
 * exluded >1% missingness 
 * required at least 5 copies of the minor allele 
 * Omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data.
 
-###Phasing
+### Phasing
 We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
 
 ---
