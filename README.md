@@ -69,7 +69,7 @@ pip install -r requirements.txt
 OR
 
 you may manually install teh required Python packages:
-(NEED TO EDIT THIS AFTER FINALIZING)
+(**NEED TO EDIT THIS AFTER FINALIZING**)
 
 ```bash
 pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
@@ -123,7 +123,7 @@ $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{tot
 Agreement computed separately for AFR, EUR, and EAS
 
 
-### 2, Toy example comparison of ground truth
+### 2. Toy example comparison of ground truth
 
 To verify correctness of our HMM LAI tool, we simulated small synthetic admixed datasets with known local ancestry labels
 
