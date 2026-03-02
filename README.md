@@ -1,8 +1,6 @@
 # Implementing a Hidden Markov Model Local Ancestry Inference (HMM LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
-![UCSD Logo](image-url)
-
 
 ### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
 
