@@ -93,7 +93,7 @@ To establish our "gold standard", in line with Browning et al., 2023, we used FL
 We compared 
 * overall concordance
 * per-ancestry concordance
-between our model and FLARE where concordance is calculated as $Concordance = \frac{\#\text{ markers where ancestry matches FLARE}}{\text{total \# markers}}$
+between our model and FLARE where concordance is calculated as $Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$
 
 
 ---
