@@ -1,17 +1,31 @@
-# Hidden Markov Model Local Ancestry Inference (HMM LAI)
+# Implementing a Hidden Markov Model Local Ancestry Inference (HMM LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
+![UCSD Logo](image-url)
+
 
 ### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
 
-## Project Overview
+## 📖 Project Overview
 
-This repository implements an end-to-end Hidden Markov Model (HMM) approach for local ancestry inference (LAI). The objective is to infer ancestry at each genomic position for admixed indivudals using phased genotype data and ancestry-specific reference panels.
+Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
-Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4), published by Browning et al., 2023 in The American Journal of Human Genetics. Their model treats ancestry along a chromosome as a sequence of hidden states (AFR/EUR/EAS), with transitions driven by recombination distance and emissions based on ancestry-specific allele frequencies estimated from a reference panel.
+The objective is to infer ancestry at each genomic position for admixed indivudals using:
+* phased genotype data
+* ancestry-specific reference panels
+* Recombination-aware transition modeling (**double check if we have time**)
+
+Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4) as published by
+> *Browning et al., 2023*
+> *The American Journal of Human Genetics*
+
+In the FLARE model:
+> Hidden states represent ancestry labels (AFR/EUR/EAS)
+> Transitions are driven by recombination distance
+> Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
-## Installing our HMM LAI Tool
+## 🚀 Installing our HMM LAI Tool
 
 ## 1. Clone this github repository
 ```bash
@@ -64,7 +78,7 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 ```
 ---
 
-## DATASET DESCRIPTION
+## Dataset descriptions
 
 ## Reference Set
 
@@ -135,6 +149,10 @@ Our tool expects
 
 ---
 
+## Limitations
 
+Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
+
+Our toy simulation is provided for ground-truth validation to ensure correct implementation.
 
 Installing and using the tool, test data set,
