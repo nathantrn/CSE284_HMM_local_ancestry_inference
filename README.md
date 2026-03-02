@@ -35,7 +35,7 @@ conda create --name hmm_lai_env
 
 ## Activate the environment
 Using pip
-```python
+```bash
 source hmm_lai_env/bin/activate
 ```
 
@@ -84,11 +84,19 @@ We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super
 
 ---
 
-## Evaluation Strategy
+## Evaluation Strategy 
 
 Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE.
 
 To establish our "gold standard", in line with Browning et al., 2023, we used FLARE with default settings to infer local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) of the 1000 Genomes project, using a separate analysis for each of these populations. Ancestry proportions were obtained by averaging ancestry calls across sites and individuals.
+
+We compared 
+* overall concordance
+* per-ancestry concordance
+between our model and FLARE where concordance is calculated as $$\text{Concordance} = \frac{\# \text{ markers where ancestry matches FLARE}}{\text{total } \# \text{ markers}}
+$$
+
+---
 
 ## Input Data Requirements
 
