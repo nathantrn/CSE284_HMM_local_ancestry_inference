@@ -1,7 +1,7 @@
 # Hidden Markov Model Local Ancestry Inference
 
-### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
-### UCSD CSE 284 Winter 2026
+UCSD CSE 284 Winter 2026
+Authors: Jonah Pacis, Safa Saeed, Nathan Tran
 
 ## PROJECT OVERVIEW
 
