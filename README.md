@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 OR
 
-you may manually install teh required Python packages:
+you may manually install the required Python packages:
 (**NEED TO EDIT THIS AFTER FINALIZING**)
 
 ```bash
