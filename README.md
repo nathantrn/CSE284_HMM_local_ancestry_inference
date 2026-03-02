@@ -21,27 +21,27 @@ cd CSE284_HMM_local_ancestry_inference
 
 ### ⭐️ Recommended: Create a virtual environment ⭐️
 
-Using pip
+**Using pip**
 ```python
 python3 -m venv hmm_lai_env
 ```
 
 OR 
 
-Using conda 🐍
+**Using conda 🐍**
 ```bash
 conda create --name hmm_lai_env
 ```
 
 ## Activate the environment
-Using pip
+**Using pip**
 ```bash
 source hmm_lai_env/bin/activate
 ```
 
 OR 
 
-Using conda 🐍
+**Using conda 🐍**
 ```bash
 conda activate hmm_lai_env
 ```
@@ -78,7 +78,14 @@ In line with Browning et al., 2023, we excluded variants that were not bi-alleli
 
 ## Test Set
 
-The test set consistes of **admixed individuals**. These individuals are from the 1000 Genomes Project and not incldued in the reference panel.
+The test set consistes of chromosome 21 (4.6 GB) **admixed individuals**. These individuals are from the 1000 Genomes Project and not includued in the reference panel.
+
+We downloaded the test data using the following commands:
+```bash
+wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz
+
+wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz.tbi
+```
 
 We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) with our HMM implementation and compared our output to FLARE for evaluation.
 
@@ -86,6 +93,7 @@ We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super
 
 ## Evaluation Strategy 
 
+### 1. Comparison against a gold standard
 Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE.
 
 To establish our "gold standard", in line with Browning et al., 2023, we used FLARE with default settings to infer local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) of the 1000 Genomes project, using a separate analysis for each of these populations. Ancestry proportions were obtained by averaging ancestry calls across sites and individuals.
@@ -98,7 +106,23 @@ between our model and FLARE where concordance is calculated as
 
 $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 
+### 2, Toy example comparison of ground truth
 
+To verify correctness of our HMM LAI tool, we simulated small synthetic admixed datasets with known local ancestry labels
+
+Simulation will allow us to validate **(need to double check this!)**
+- Transition probability modeling
+- Emission probability calculations
+- Forward-backward inference correctness
+
+---
+## Compuatational Performance
+
+We recorded the:
+- Total runtime
+- Scaling with number of markers
+
+to assess our tools computational efficiency relative to FLARE
 ---
 
 ## Input Data Requirements
