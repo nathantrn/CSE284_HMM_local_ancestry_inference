@@ -76,23 +76,31 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 ```
 ---
 
-## Dataset descriptions
+## 📂 Dataset descriptions
 
-## Reference Set
+## 🔹 Reference Set
 
 **(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
 We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
 
-In line with Browning et al., 2023, we excluded variants that were not bi-allelic SNPs with <1% missingness and at least 5 copies of the minor allele in the combined data. We also assigned panels using the regional labels provided by the HGDP but omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data. Additionally, we phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
+###Variant Filtering
+In line with Browning et al., 2023, we:
+* excluded variants that were not bi-allelic SNPs
+* exluded >1% missingness 
+* required at least 5 copies of the minor allele 
+* Omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data.
+
+###Phasing
+We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
 
 ---
 
-## Test Set
+## 🔹 Test Set
 
-The test set consistes of chromosome 21 (4.6 GB) **admixed individuals**. These individuals are from the 1000 Genomes Project and not includued in the reference panel.
+The test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These indivudals **were not includued in the reference panel**.
 
-We downloaded the test data using the following commands:
+Data were downloaded using:
 ```bash
 wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz
 
@@ -103,20 +111,17 @@ We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super
 
 ---
 
-## Evaluation Strategy 
+## 📊 Evaluation Strategy 
 
-### 1. Comparison against a gold standard
-Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE.
+### 1. Comparison with FLARE (Reference Benchmark)
+Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE using default settings.
 
-To establish our "gold standard", in line with Browning et al., 2023, we used FLARE with default settings to infer local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) of the 1000 Genomes project, using a separate analysis for each of these populations. Ancestry proportions were obtained by averaging ancestry calls across sites and individuals.
-
-We compared 
-* overall concordance
-* per-ancestry concordance
-between our model and FLARE where concordance is calculated as
-
-
+We compute:
+* Overall concordance
 $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
+* Per-ancestry concordance
+Agreement computed separately for AFR, EUR, and EAS
+
 
 ### 2, Toy example comparison of ground truth
 
@@ -128,9 +133,9 @@ Simulation will allow us to validate **(need to double check this!)**
 - Forward-backward inference correctness
 
 ---
-## Compuatational Performance
+## ⚡ Compuatational Performance
 
-We recorded the:
+We evaluated compuational efficieny by measuring:
 - Total runtime
 - Scaling with number of markers
 
@@ -141,13 +146,15 @@ to assess our tools computational efficiency relative to FLARE
 
 **TODO: UPDATE AS NEEDED**
 
-Our tool expects
-* Phased genotype data (VCF)
-* 
+Our HMM LAI tool expects
+* Phased genotype data (VCF format)
+* Genetic map file (cM or Morgans) (**double check this**)
+* Reference sample list (non-admixed individuals)
+* Test sample list (admixed individuals)
 
 ---
 
-## Limitations
+## ⚠ Limitations
 
 Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
 
