@@ -8,7 +8,7 @@
 
 This repository implements an end-to-end Hidden Markov Model (HMM) approach for local ancestry inference (LAI). The objective is to infer ancestry at each genomic position for admixed indivudals using phased genotype data and ancestry-specific reference panels.
 
-Our implementation will replicate the basic functionality of FLARE. The model treats ancestry along a chromosome as a sequence of hidden states (AFR/EUR/EAS), with transitions driven by recombination distance and emissions based on ancestry-specific allele frequencies estimated from a reference panel.
+Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4). The model treats ancestry along a chromosome as a sequence of hidden states (AFR/EUR/EAS), with transitions driven by recombination distance and emissions based on ancestry-specific allele frequencies estimated from a reference panel.
 
 ---
 ## INSTALLATION
@@ -50,6 +50,8 @@ conda activate hmm_lai_env
 ## DATASET DESCRIPTION
 
 ## Reference Set
+We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
+In line with Browning et al., 2023, we excluded variants that were not bi-allelic SNPs with <1% missingness and at least 5 copies of the minor allele in the combined data. We also assigned panels using the regional labels provided by the HGDP but omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data
 
 ---
 
