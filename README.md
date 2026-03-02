@@ -14,13 +14,13 @@ The objective is to infer ancestry at each genomic position for admixed indivuda
 * Recombination-aware transition modeling (**double check if we have time**)
 
 Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4) as published by
-> *Browning et al., 2023*
+> *Browning et al., 2023*, Fast, accurate local ancestry inference with FLARE,
 > *The American Journal of Human Genetics*
 
 In the FLARE model:
-> Hidden states represent ancestry labels (AFR/EUR/EAS)
-> Transitions are driven by recombination distance
-> Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
+- Hidden states represent ancestry labels (AFR/EUR/EAS)
+- Transitions are driven by recombination distance
+- Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
 ## 🚀 Installing our HMM LAI Tool
