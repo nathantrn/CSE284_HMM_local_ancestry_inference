@@ -1,8 +1,8 @@
 # Hidden Markov Model Local Ancestry Inference
 
-UCSD CSE 284 Winter 2026
+### UCSD CSE 284 Winter 2026
 
-Authors: Jonah Pacis, Safa Saeed, Nathan Tran
+### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
 
 ## PROJECT OVERVIEW
 
@@ -19,29 +19,29 @@ git clone https://github.com/[insert the rest of path].git
 cd [name of repo]
 ```
 
-### Recommended: Create a virtual environment
+### ⭐️ Recommended: Create a virtual environment ⭐️
 
-pip
+Using pip
 ```python
 python3 -m venv hmm_lai_env
 ```
 
 OR 
 
-conda
+Using conda 🐍
 ```bash
 conda create --name hmm_lai_env
 ```
 
 ## Activate the environment
-pip
+Using pip
 ```python
 source hmm_lai_env/bin/activate
 ```
 
 OR 
 
-conda
+Using conda 🐍
 ```bash
 conda activate hmm_lai_env
 ```
