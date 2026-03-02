@@ -82,12 +82,14 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 **(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
-We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
+We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/). 
+
+Prior to variant filering and phasing, we merged the 1000 Genomes and HGDP dataset.
 
 ### Variant Filtering
 In line with Browning et al., 2023, we:
 * excluded variants that were not bi-allelic SNPs
-* exluded >1% missingness 
+* excluded variants with >1% missingness 
 * required at least 5 copies of the minor allele 
 * Omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data.
 
