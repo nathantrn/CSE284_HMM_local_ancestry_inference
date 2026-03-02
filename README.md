@@ -15,8 +15,8 @@ Our implementation will replicate the basic functionality of [FLARE (Fast local 
 
 ## 1. Clone this github repository
 ```bash
-git clone https://github.com/[insert the rest of path].git
-cd [name of repo]
+git clone https://github.com/nathantrn/CSE284_HMM_local_ancestry_inference.git
+cd CSE284_HMM_local_ancestry_inference
 ```
 
 ### ⭐️ Recommended: Create a virtual environment ⭐️
