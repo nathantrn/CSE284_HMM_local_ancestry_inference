@@ -45,23 +45,61 @@ Using conda 🐍
 ```bash
 conda activate hmm_lai_env
 ```
+
+## 2. Install Dependecies
+
+We have provided the packages dependencies in requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
+
+OR
+
+you may manually install teh required Python packages:
+(NEED TO EDIT THIS AFTER FINALIZING)
+
+```bash
+pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
+```
 ---
 
 ## DATASET DESCRIPTION
 
 ## Reference Set
 
-(note to self: may use 1000 genomes as reference set since it may be easier to use)
+**(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
 We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
+
 In line with Browning et al., 2023, we excluded variants that were not bi-allelic SNPs with <1% missingness and at least 5 copies of the minor allele in the combined data. We also assigned panels using the regional labels provided by the HGDP but omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data. Additionally, we phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
 
 ---
 
 ## Test Set
 
-In line with Browning et al., 2023, we used FLARE with default settings to infer local ancestry in 3 populations (one for each of AFR, EUR, EAS — TODO: list the populations here) of the 1000 Genomes project, using a separate analysis for each of these populations. Ancestry proportions were obtained by averaging ancestry calls across sites and individuals.
+The test set consistes of **admixed individuals**. These individuals are from the 1000 Genomes Project and not incldued in the reference panel.
+
+We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) with our HMM implementation and compared our output to FLARE for evaluation.
 
 ---
+
+## Evaluation Strategy
+
+Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE.
+
+To establish our "gold standard", in line with Browning et al., 2023, we used FLARE with default settings to infer local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) of the 1000 Genomes project, using a separate analysis for each of these populations. Ancestry proportions were obtained by averaging ancestry calls across sites and individuals.
+
+## Input Data Requirements
+
+**TODO: UPDATE AS NEEDED**
+
+Our tool expects
+* Phased genotype data (VCF)
+* 
+
+---
+
+
 
 Installing and using the tool, test data set,
