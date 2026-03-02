@@ -8,7 +8,7 @@
 
 Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
-The objective is to infer ancestry at each genomic position for admixed indivudals using:
+The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
 * ancestry-specific reference panels
 * Recombination-aware transition modeling (**double check if we have time**)
