@@ -1,4 +1,7 @@
-# CSE284_HMM_local_ancestry_inference
+# Hidden Markov Model Local Ancestry Inference
+
+### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
+### UCSD CSE 284 Winter 2026
 
 ## PROJECT OVERVIEW
 
@@ -30,12 +33,14 @@ conda create --name hmm_lai_env
 ```
 
 ## Activate the environment
+pip
 ```python
 source hmm_lai_env/bin/activate
 ```
 
 OR 
 
+conda
 ```bash
 conda activate hmm_lai_env
 ```
