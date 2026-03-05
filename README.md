@@ -18,7 +18,7 @@ Our implementation will replicate the basic functionality of [FLARE (Fast local 
 > *The American Journal of Human Genetics*
 
 In the FLARE model:
-- Hidden states represent ancestry labels (AFR/EUR/EAS)
+- Hidden states represent ancestry labels (AFR/EUR/AMR)
 - Transitions are driven by recombination distance
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
@@ -82,9 +82,9 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 **(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
-We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/). 
+We downloaded high-coverage sequence data for chromosome 21 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/) (hg38). The reference panels were made from unadmixed individuals from the AFR and EUR superpopulations and individuals from the American superpopulation in the HGDP dataset. Note that American samples are not truly unadmixed due to the history of colonization and slave trade in the Americas, but for the scope of this project, we are treating these samples as unadmixed for building our reference panel.
 
-Prior to variant filtering and phasing, we merged the 1000 Genomes and HGDP dataset.
+Prior to variant filtering and phasing, we merged the 1000 Genomes (see test set) and HGDP dataset.
 
 ### Variant Filtering
 In line with Browning et al., 2023, we:
@@ -100,7 +100,7 @@ We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/bea
 
 ## Test Set
 
-The test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel**.
+The main test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel** and represent admixed individuals from the four populations of the AMR superpopulation (CLM & PUR) which are expected to be admixed with AMR, AFR, and EUR local ancestry. 
 
 Data was downloaded using:
 ```bash
@@ -109,7 +109,7 @@ wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.2019
 wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz.tbi
 ```
 
-We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) with our HMM implementation and compared our output to FLARE for evaluation.
+We inferred local ancestry in the four AMR populations (CLM, MXL, PUR, PEL) with our HMM implementation and compared our output to FLARE for evaluation. Additionally, we inferred local ancestry for one population from the EAS and SAS superpopulations in the 1000 Genomes Dataset (EAS: JPT, SAS: PJL) to evaluate performance on samples where the true ancestry is absent from our model. We expect LAI to be uncertain/unstable for these populations not represented in our model.
 
 ---
 
@@ -135,7 +135,7 @@ Simulation will allow us to validate **(need to double check this!)**
 - Forward-backward inference correctness
 
 ---
-## ⚡ Compuatational Performance
+## ⚡ Computational Performance
 
 We evaluated compuational efficieny by measuring:
 - Total runtime
