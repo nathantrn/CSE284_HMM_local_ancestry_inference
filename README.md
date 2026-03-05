@@ -8,17 +8,17 @@
 
 Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
-The objective is to infer ancestry at each genomic position for admixed indivudals using:
+The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
 * ancestry-specific reference panels
-* Recombination-aware transition modeling (**double check if we have time**)
+* Recombination-aware transition modeling
 
 Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4) as published by
 > *Browning et al., 2023*, Fast, accurate local ancestry inference with FLARE,
 > *The American Journal of Human Genetics*
 
 In the FLARE model:
-- Hidden states represent ancestry labels (AFR/EUR/EAS)
+- Hidden states represent ancestry labels (AFR/EUR/AMR)
 - Transitions are driven by recombination distance
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
@@ -33,7 +33,7 @@ cd CSE284_HMM_local_ancestry_inference
 
 ### ⭐️ Recommended: Create a virtual environment ⭐️
 
-**Using pip**
+**Using pip🐥**
 ```python
 python3 -m venv hmm_lai_env
 ```
@@ -46,7 +46,7 @@ conda create --name hmm_lai_env
 ```
 
 ## Activate the environment
-**Using pip**
+**Using pip🐥**
 ```bash
 source hmm_lai_env/bin/activate
 ```
@@ -78,36 +78,38 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 ## 📂 Dataset descriptions
 
-## 🔹 Reference Set
+## Reference Set
 
 **(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
-We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/).
+We downloaded high-coverage sequence data for chromosome 21 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/) (hg38). The reference panels were made from unadmixed individuals from the AFR and EUR superpopulations and individuals from the American superpopulation in the HGDP dataset. Note that American samples are not truly unadmixed due to the history of colonization and slave trade in the Americas, but for the scope of this project, we are treating these samples as unadmixed for building our reference panel.
 
-###Variant Filtering
+Prior to variant filtering and phasing, we merged the 1000 Genomes (**see test set**) and HGDP dataset.
+
+### Variant Filtering
 In line with Browning et al., 2023, we:
 * excluded variants that were not bi-allelic SNPs
-* exluded >1% missingness 
+* excluded variants with >1% missingness 
 * required at least 5 copies of the minor allele 
 * Omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data.
 
-###Phasing
+### Phasing
 We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
 
 ---
 
-## 🔹 Test Set
+## Test Set
 
-The test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These indivudals **were not includued in the reference panel**.
+The main test set consists of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel** and represent admixed individuals from the four populations of the AMR superpopulation (CLM, MXL, PEL, & PUR) which are expected to be admixed with AMR, AFR, and EUR local ancestry. 
 
-Data were downloaded using:
+Data was downloaded using:
 ```bash
 wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz
 
 wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz.tbi
 ```
 
-We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super populations — **TODO: list the populations here**) with our HMM implementation and compared our output to FLARE for evaluation.
+We inferred local ancestry in the four AMR populations (CLM, MXL, PUR, PEL) with our HMM implementation and compared our output to FLARE for evaluation. Additionally, we inferred local ancestry for one population from the EAS and SAS superpopulations in the 1000 Genomes Dataset (EAS: JPT, SAS: PJL) to evaluate performance on samples where the true ancestry is absent from our model. We expect LAI to be uncertain/unstable for these populations not represented in our model.
 
 ---
 
@@ -116,11 +118,11 @@ We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super
 ### 1. Comparison with FLARE (Reference Benchmark)
 Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE using default settings.
 
-We compute:
+We computed:
 * Overall concordance
 $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 * Per-ancestry concordance
-Agreement computed separately for AFR, EUR, and EAS
+Agreement computed separately for AFR, EUR, and AMR
 
 
 ### 2. Toy example comparison of ground truth
@@ -133,7 +135,7 @@ Simulation will allow us to validate **(need to double check this!)**
 - Forward-backward inference correctness
 
 ---
-## ⚡ Compuatational Performance
+## ⚡ Computational Performance
 
 We evaluated compuational efficieny by measuring:
 - Total runtime
@@ -153,20 +155,22 @@ Our HMM LAI tool expects
 
 ---
 
-## ⚠ Limitations
+## ⚠ Limitations of our approach
 
 Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
 
 Our toy simulation is provided for ground-truth validation to ensure correct implementation.
 
+Additionally, our reference panel contains admixed individuals for the AMR population due to the nature of European colonization and the African slave trade in the Americas. Since AMR individuals in the reference panel are admixed with AMR, AFR, and EUR ancestry, there will be lower accuracy for AMR ancestry because the panel is not 100% unadmixed American. 
+
 ---
 
-#FOR PEER REVIEW
+# FOR PEER REVIEW
 We would appreciate feedback on the following
 * readability of the instructions for installing the tool, our goals & metrics
 * We were thinking of using only 1000 Genomes data, but if we are using 1000 Genomes for our reference and test, we were thinking of using AMR individuals (who are admixed with AFR, EUR, and possibly EAS), but these individuals also have AMR specific ancestry. How could we alter our approach to accomodate this, or should we stick with using HGDP for our reference and 1000 Genomes for our test?
 
-#REMAINING TASKS
+# REMAINING TASKS
 * Implement out HMM LAI using Pomegranate forward backward algorithm
 * Create our toy example and run our HMM LAI to assess correctness of implementation
 * Run FLARE default parameters on our test data
