@@ -1,5 +1,5 @@
 """
-Toy Example Constructor using haptools simgenotype
+Toy Example using haptools simgenotype
 ==================================================
 Generates simulated admixed genotype data with ground-truth local ancestry
 labels (breakpoints) using haptools simgenotype.
@@ -8,14 +8,13 @@ haptools outputs:
   - <scenario>.vcf.gz        — phased genotypes for simulated admixed individuals
   - <scenario>.bp            — ground-truth ancestry breakpoints (the "true labels")
 
-These files feed directly into your HMM pipeline as the toy test cases.
 
-Prerequisites
+Prior to running this script:
 -------------
   pip install haptools
 
-  You also need:
-    1. A phased reference VCF (chr21 region from your 1000G/HGDP data)
+ This script assumes you have:
+    1. A phased reference VCF (chr21 region from 1000G/HGDP data)
     2. The HapMap GRCh38 genetic map for chr21
     3. A sample_info .tsv mapping sample IDs -> population codes
 
@@ -23,9 +22,9 @@ Prerequisites
 
 Scenarios
 ---------
-  S1  Trivial         — 100% YRI (AFR), no admixture; unadmixed control
-  S2  Two ancestries  — AFR + EUR pulse admixture, 7 generations
-  S3  Three ancestries — AFR + EUR + AMR pulse admixture, 7 generations
+    Trivial         — 100% YRI (AFR) as an unadmixed control
+    Two ancestries  — AFR + EUR admixture, 7 generations
+    Three ancestries — AFR + EUR + AMR admixture, 7 generations
 
 Usage
 -----
@@ -63,7 +62,7 @@ SAMPLE_INFO = "data/1000genomes_sampleinfo.tsv"
 REGION = "chr21:10000000-15000000"
 
 # Number of admixed individuals to simulate per scenario
-N_SAMPLES = 20
+N_SAMPLES = 20 #can also be 1?
 
 # Output directory
 OUT_DIR = Path("toy_examples_haptools")
@@ -103,7 +102,7 @@ def build_model_files(model_dir: Path, n_haplotypes: int):
     """)
 
     # ── S2: Two ancestries — AFR + EUR pulse, 7 generations ──
-    # Generation 1: 80% YRI (AFR), 20% IBS (EUR), founding pulse.
+    # Generation 1: 80% YRI (AFR), 20% IBS (EUR).
     # Generations 2-7: purely admixed (draws from admixed pool only).
     # 7 generations ≈ ~175-200 years, appropriate for Americas admixture.
     gens_two = "\n".join(
@@ -115,11 +114,10 @@ def build_model_files(model_dir: Path, n_haplotypes: int):
 {gens_two}
     """)
 
-    # ── S3: Three ancestries — AFR + EUR + AMR pulse, 7 generations ──
+    # ── S3: Three ancestries — AFR + EUR + AMR, 7 generations ──
     # Generation 1: 40% YRI (AFR), 40% IBS (EUR), 20% PEL (AMR proxy).
     # Generations 2-7: purely admixed.
-    # PEL (Peruvians) is used as the AMR reference proxy — high indigenous
-    # ancestry, the same choice made in FLARE and this project.
+    # PEL (Peruvians) is used as the AMR reference due to high proportion of indigenous AMR ancestry
     gens_three = "\n".join(
         f"        {g}\t1.0\t0\t0\t0" for g in range(2, 8)
     )
@@ -212,10 +210,6 @@ def summarize_breakpoints(bp_file: Path):
     print(f"    total segments : {n_segments}")
     print(f"    ancestry segment counts: {pop_counts}")
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Main
-# ─────────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
 
