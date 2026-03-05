@@ -11,7 +11,7 @@ Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** appr
 The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
 * ancestry-specific reference panels
-* Recombination-aware transition modeling
+* recombination-aware transition modeling
 
 Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4) as published by
 > *Browning et al., 2023*, Fast, accurate local ancestry inference with FLARE,
@@ -23,9 +23,9 @@ In the FLARE model:
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
-## 🚀 Installing our HMM LAI Tool
+## 🚀 Installing and Running our HMM LAI Tool
 
-## 1. Clone this github repository
+## 1. Clone this Github Repository
 ```bash
 git clone https://github.com/nathantrn/CSE284_HMM_local_ancestry_inference.git
 cd CSE284_HMM_local_ancestry_inference
@@ -72,11 +72,35 @@ you may manually install the required Python packages:
 (**NEED TO EDIT THIS AFTER FINALIZING**)
 
 ```bash
-pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
+pip install numpy scipy pandas matplotlib scikit-learn cyvcf2 scikit-allel
 ```
+
+## 3. Run the Tool
+
+In the directory you would like your output results to generate in, run the following command, substituting in the appropriate paths:
+
+```
+python /path/to/CSE284_HMM_local_ancestry_inference/run_hmm.py /path/to/ref/vcf /path/to/ref/panel /path/to/admixed/vcf /path/to/genetic/map /path/to/model/params
+```
+### Input Data Requirements
+
+Our HMM LAI tool expects:
+* Phased reference VCF file
+* Tab-separated reference panel mapping samples in reference VCF to reference panel groups
+* Phased admixed VCF file
+* Genetic map file (cM), i.e. Hapmap [GRCh37](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) or [GRCh38](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/)
+* Model parameters, retrieved from running the FLARE tool on the above files
+
+### Expected Output
+
+Running our tool will return two dataframes:
+
+* `ancestry_haplotypes_results.txt`, which contains the per-SNP ancestry predictions for each haplotype in the admixed samples (derived from Viterbi algorithm)
+* `global_ancestry_results.txt`, which contains the global ancestry proportions for each admixed samples (derived from forward-backward algorithm)
+
 ---
 
-## 📂 Dataset descriptions
+## 📂 Dataset Descriptions
 
 ## Reference Set
 
@@ -125,7 +149,7 @@ $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{tot
 Agreement computed separately for AFR, EUR, and AMR
 
 
-### 2. Toy example comparison of ground truth
+### 2. Toy Example Comparison of Ground Truth
 
 To verify correctness of our HMM LAI tool, we simulated small synthetic admixed datasets with known local ancestry labels
 
@@ -137,21 +161,10 @@ Simulation will allow us to validate **(need to double check this!)**
 ---
 ## ⚡ Computational Performance
 
-We evaluated compuational efficieny by measuring:
+We evaluated compuational efficiency by measuring:
 - Total runtime
 - Scaling with number of markers
 to assess our tools computational efficiency relative to FLARE
----
-
-## Input Data Requirements
-
-**TODO: UPDATE AS NEEDED**
-
-Our HMM LAI tool expects
-* Phased genotype data (VCF format)
-* Genetic map file (cM or Morgans) (**double check this**)
-* Reference sample list (non-admixed individuals)
-* Test sample list (admixed individuals)
 
 ---
 
@@ -167,11 +180,11 @@ Additionally, our reference panel contains admixed individuals for the AMR popul
 
 # FOR PEER REVIEW
 We would appreciate feedback on the following
-* readability of the instructions for installing the tool, our goals & metrics
+* Readability of the instructions for installing the tool, our goals & metrics
 * We were thinking of using only 1000 Genomes data, but if we are using 1000 Genomes for our reference and test, we were thinking of using AMR individuals (who are admixed with AFR, EUR, and possibly EAS), but these individuals also have AMR specific ancestry. How could we alter our approach to accomodate this, or should we stick with using HGDP for our reference and 1000 Genomes for our test?
+* Our HMM code (in `run_hmm.py`) is very slow, so any feedback on speeding it up would be great
 
 # REMAINING TASKS
-* Implement out HMM LAI using Pomegranate forward backward algorithm
 * Create our toy example and run our HMM LAI to assess correctness of implementation
 * Run FLARE default parameters on our test data
 * Compare FLARE and our HMM LAI tool performance
