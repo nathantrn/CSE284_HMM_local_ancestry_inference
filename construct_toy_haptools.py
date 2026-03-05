@@ -245,14 +245,14 @@ For each scenario you now have:
   <name>.vcf.gz   — phased genotypes to feed into your HMM as test input
   <name>.bp       — ground-truth local ancestry breakpoints for evaluation
 
-To load breakpoints in Python for evaluation against your HMM output:
+To load breakpoints in Python for evaluation against HMM output:
 
     import pandas as pd
     bp = pd.read_csv("toy_examples_haptools/S3_three_ancestries.bp",
                      sep="\\t", comment="#",
                      names=["sample","hap","population","chrom","start","end"])
 
-To visualise ancestry tracts (optional):
+Vizualizing tracts (optional):
     haptools karyogram toy_examples_haptools/S3_three_ancestries.bp \\
         --output S3_karyogram.png
 """)
