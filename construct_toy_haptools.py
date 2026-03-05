@@ -1,4 +1,6 @@
 """
+TODO: Jonah needs to double check this!
+
 Toy Example using haptools simgenotype
 ==================================================
 Generates simulated admixed genotype data with ground-truth local ancestry
