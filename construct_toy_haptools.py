@@ -178,7 +178,7 @@ def run_simgenotype(scenario_name: str, model_file: Path, out_prefix: Path):
 # Parse breakpoints into a readable summary (optional inspection utility)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def summarise_breakpoints(bp_file: Path):
+def summarize_breakpoints(bp_file: Path):
     """
     Print a human-readable summary of the .bp breakpoints file.
 
@@ -242,7 +242,7 @@ if __name__ == "__main__":
     print("\nStep 3: Breakpoint summaries (ground truth inspection)...")
     for name, _ in scenarios:
         bp_file = OUT_DIR / f"{name}.bp"
-        summarise_breakpoints(bp_file)
+        summarize_breakpoints(bp_file)
 
     print(f"""
 Done. Outputs in ./{OUT_DIR}/
