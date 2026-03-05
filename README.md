@@ -33,7 +33,7 @@ cd CSE284_HMM_local_ancestry_inference
 
 ### ⭐️ Recommended: Create a virtual environment ⭐️
 
-**Using pip**
+**Using pip🐥**
 ```python
 python3 -m venv hmm_lai_env
 ```
@@ -46,7 +46,7 @@ conda create --name hmm_lai_env
 ```
 
 ## Activate the environment
-**Using pip**
+**Using pip🐥**
 ```bash
 source hmm_lai_env/bin/activate
 ```
@@ -78,13 +78,13 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 ## 📂 Dataset descriptions
 
-## 🔹 Reference Set
+## Reference Set
 
 **(note to self: may use 1000 genomes as reference set since it may be easier to use)**
 
 We downloaded high-coverage sequence data for chromosome 1 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/). 
 
-Prior to variant filering and phasing, we merged the 1000 Genomes and HGDP dataset.
+Prior to variant filtering and phasing, we merged the 1000 Genomes and HGDP dataset.
 
 ### Variant Filtering
 In line with Browning et al., 2023, we:
@@ -98,11 +98,11 @@ We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/bea
 
 ---
 
-## 🔹 Test Set
+## Test Set
 
-The test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These indivudals **were not includued in the reference panel**.
+The test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel**.
 
-Data were downloaded using:
+Data was downloaded using:
 ```bash
 wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz
 
@@ -118,7 +118,7 @@ We inferred local ancestry in 6 populations (two for each of AFR, EUR, EAS super
 ### 1. Comparison with FLARE (Reference Benchmark)
 Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE using default settings.
 
-We compute:
+We computed:
 * Overall concordance
 $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 * Per-ancestry concordance
@@ -155,7 +155,7 @@ Our HMM LAI tool expects
 
 ---
 
-## ⚠ Limitations
+## ⚠ Limitations of our approach
 
 Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
 
