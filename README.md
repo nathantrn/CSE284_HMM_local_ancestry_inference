@@ -11,7 +11,7 @@ Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** appr
 The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
 * ancestry-specific reference panels
-* Recombination-aware transition modeling (**double check if we have time**)
+* Recombination-aware transition modeling
 
 Our implementation will replicate the basic functionality of [FLARE (Fast local ancestry estimation)](https://www.cell.com/ajhg/fulltext/S0002-9297(22)00544-4) as published by
 > *Browning et al., 2023*, Fast, accurate local ancestry inference with FLARE,
@@ -84,7 +84,7 @@ pip install numpy scipy pandas matplotlub scikit-learn cyvcf2
 
 We downloaded high-coverage sequence data for chromosome 21 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/) (hg38). The reference panels were made from unadmixed individuals from the AFR and EUR superpopulations and individuals from the American superpopulation in the HGDP dataset. Note that American samples are not truly unadmixed due to the history of colonization and slave trade in the Americas, but for the scope of this project, we are treating these samples as unadmixed for building our reference panel.
 
-Prior to variant filtering and phasing, we merged the 1000 Genomes (see test set) and HGDP dataset.
+Prior to variant filtering and phasing, we merged the 1000 Genomes (**see test set**) and HGDP dataset.
 
 ### Variant Filtering
 In line with Browning et al., 2023, we:
@@ -100,7 +100,7 @@ We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/bea
 
 ## Test Set
 
-The main test set consistes of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel** and represent admixed individuals from the four populations of the AMR superpopulation (CLM & PUR) which are expected to be admixed with AMR, AFR, and EUR local ancestry. 
+The main test set consists of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel** and represent admixed individuals from the four populations of the AMR superpopulation (CLM, MXL, PEL, & PUR) which are expected to be admixed with AMR, AFR, and EUR local ancestry. 
 
 Data was downloaded using:
 ```bash
@@ -122,7 +122,7 @@ We computed:
 * Overall concordance
 $$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 * Per-ancestry concordance
-Agreement computed separately for AFR, EUR, and EAS
+Agreement computed separately for AFR, EUR, and AMR
 
 
 ### 2. Toy example comparison of ground truth
@@ -160,6 +160,8 @@ Our HMM LAI tool expects
 Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
 
 Our toy simulation is provided for ground-truth validation to ensure correct implementation.
+
+Additionally, our reference panel contains admixed individuals for the AMR population due to the nature of European colonization and the African slave trade in the Americas. Since AMR individuals in the reference panel are admixed with AMR, AFR, and EUR ancestry, there will be lower accuracy for AMR ancestry because the panel is not 100% unadmixed American. 
 
 ---
 
