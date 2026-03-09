@@ -60,28 +60,34 @@ conda activate hmm_lai_env
 
 ## 2. Install Dependecies
 
-We have provided the packages dependencies in requirements.txt
-
-```bash
-pip install -r requirements.txt
-```
-
-OR
-
-you may manually install the required Python packages:
-(**NEED TO EDIT THIS AFTER FINALIZING**)
+First install the required Python packages:
 
 ```bash
 pip install numpy scipy pandas matplotlib scikit-learn cyvcf2 scikit-allel
 ```
 
+Also install FLARE, which we use for benchmarking and to generate the model parameters file. FLARE requires Java version 11 or later:
+
+```
+wget https://faculty.washington.edu/browning/flare.jar
+```
+
 ## 3. Run the Tool
 
-In the directory you would like your output results to generate in, run the following command, substituting in the appropriate paths:
+First, we recommend running FLARE to get the required [model parameter file](https://github.com/browning-lab/flare/tree/master?tab=readme-ov-file#model-file-format) (i.e. `flare.out.model`), as seen below:
 
 ```
-python /path/to/CSE284_HMM_local_ancestry_inference/run_hmm.py /path/to/ref/vcf /path/to/ref/panel /path/to/admixed/vcf /path/to/genetic/map /path/to/model/params
+java -jar flare.jar ref=flare.ref.vcf.gz gt=flare.gt.vcf.gz map=flare.chr1.map ref-panel=flare.ref.panel out=flare.out
 ```
+
+Then run the following command, substituting in the appropriate paths. You can specify `-g` to run analysis without the global ancestry calculations or `-l` to run analysis without the local ancestry calculations:
+
+```
+python /path/to/CSE284_HMM_local_ancestry_inference/run_hmm.py /path/to/ref/vcf /path/to/ref/panel /path/to/admixed/vcf /path/to/genetic/map /path/to/model/params [-o /output/path] [-g global_off] [-l local_off]
+```
+
+Our tool can take a few hours to run depending on the input vcf sizes. If you are on macOS, you can precede the above code with the `caffeinate` command to make sure your computer doesn't turn off while the code is still running.
+
 ### Input Data Requirements
 
 Our HMM LAI tool expects:

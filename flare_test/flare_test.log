@@ -1,0 +1,100 @@
+2026-03-08 14:54:23 - INFO - starting pipeline
+2026-03-08 14:54:23 - INFO - inputs processed
+2026-03-08 15:24:45 - INFO - forward pass complete for msp_300_h1
+2026-03-08 15:55:16 - INFO - backward pass complete for msp_300_h1
+2026-03-08 15:55:57 - INFO - global ancestry calculated for msp_300_h1
+2026-03-08 15:57:33 - INFO - viterbi processed marker 100 for msp_300_h1
+2026-03-08 15:59:07 - INFO - viterbi processed marker 200 for msp_300_h1
+2026-03-08 16:00:42 - INFO - viterbi processed marker 300 for msp_300_h1
+2026-03-08 16:02:15 - INFO - viterbi processed marker 400 for msp_300_h1
+2026-03-08 16:03:50 - INFO - viterbi processed marker 500 for msp_300_h1
+2026-03-08 16:05:25 - INFO - viterbi processed marker 600 for msp_300_h1
+2026-03-08 16:06:58 - INFO - viterbi processed marker 700 for msp_300_h1
+2026-03-08 16:08:32 - INFO - viterbi processed marker 800 for msp_300_h1
+2026-03-08 16:10:07 - INFO - viterbi processed marker 900 for msp_300_h1
+2026-03-08 16:11:42 - INFO - viterbi processed marker 1000 for msp_300_h1
+2026-03-08 16:13:16 - INFO - viterbi processed marker 1100 for msp_300_h1
+2026-03-08 16:14:50 - INFO - viterbi processed marker 1200 for msp_300_h1
+2026-03-08 16:16:26 - INFO - viterbi processed marker 1300 for msp_300_h1
+2026-03-08 16:18:00 - INFO - viterbi processed marker 1400 for msp_300_h1
+2026-03-08 16:19:35 - INFO - viterbi processed marker 1500 for msp_300_h1
+2026-03-08 16:21:10 - INFO - viterbi processed marker 1600 for msp_300_h1
+2026-03-08 16:22:44 - INFO - viterbi processed marker 1700 for msp_300_h1
+2026-03-08 16:24:18 - INFO - viterbi processed marker 1800 for msp_300_h1
+2026-03-08 16:25:53 - INFO - viterbi processed marker 1900 for msp_300_h1
+2026-03-08 16:27:26 - INFO - viterbi processed marker 2000 for msp_300_h1
+2026-03-08 16:27:27 - INFO - haplotype 1 (msp_300_h1) processed
+2026-03-08 16:57:49 - INFO - forward pass complete for msp_300_h2
+2026-03-08 17:28:10 - INFO - backward pass complete for msp_300_h2
+2026-03-08 17:28:50 - INFO - global ancestry calculated for msp_300_h2
+2026-03-08 17:30:24 - INFO - viterbi processed marker 100 for msp_300_h2
+2026-03-08 17:31:59 - INFO - viterbi processed marker 200 for msp_300_h2
+2026-03-08 17:33:34 - INFO - viterbi processed marker 300 for msp_300_h2
+2026-03-08 17:35:10 - INFO - viterbi processed marker 400 for msp_300_h2
+2026-03-08 17:36:45 - INFO - viterbi processed marker 500 for msp_300_h2
+2026-03-08 17:38:20 - INFO - viterbi processed marker 600 for msp_300_h2
+2026-03-08 17:39:55 - INFO - viterbi processed marker 700 for msp_300_h2
+2026-03-08 17:41:30 - INFO - viterbi processed marker 800 for msp_300_h2
+2026-03-08 17:43:06 - INFO - viterbi processed marker 900 for msp_300_h2
+2026-03-08 17:44:41 - INFO - viterbi processed marker 1000 for msp_300_h2
+2026-03-08 17:46:15 - INFO - viterbi processed marker 1100 for msp_300_h2
+2026-03-08 17:47:50 - INFO - viterbi processed marker 1200 for msp_300_h2
+2026-03-08 17:49:25 - INFO - viterbi processed marker 1300 for msp_300_h2
+2026-03-08 17:51:00 - INFO - viterbi processed marker 1400 for msp_300_h2
+2026-03-08 17:52:34 - INFO - viterbi processed marker 1500 for msp_300_h2
+2026-03-08 17:54:09 - INFO - viterbi processed marker 1600 for msp_300_h2
+2026-03-08 17:55:44 - INFO - viterbi processed marker 1700 for msp_300_h2
+2026-03-08 17:57:19 - INFO - viterbi processed marker 1800 for msp_300_h2
+2026-03-08 17:58:55 - INFO - viterbi processed marker 1900 for msp_300_h2
+2026-03-08 18:00:29 - INFO - viterbi processed marker 2000 for msp_300_h2
+2026-03-08 18:00:29 - INFO - haplotype 2 (msp_300_h2) processed
+2026-03-08 18:30:42 - INFO - forward pass complete for msp_301_h1
+2026-03-08 19:01:00 - INFO - backward pass complete for msp_301_h1
+2026-03-08 19:01:39 - INFO - global ancestry calculated for msp_301_h1
+2026-03-08 19:03:14 - INFO - viterbi processed marker 100 for msp_301_h1
+2026-03-08 19:04:49 - INFO - viterbi processed marker 200 for msp_301_h1
+2026-03-08 19:06:24 - INFO - viterbi processed marker 300 for msp_301_h1
+2026-03-08 19:08:00 - INFO - viterbi processed marker 400 for msp_301_h1
+2026-03-08 19:09:35 - INFO - viterbi processed marker 500 for msp_301_h1
+2026-03-08 19:11:11 - INFO - viterbi processed marker 600 for msp_301_h1
+2026-03-08 19:12:47 - INFO - viterbi processed marker 700 for msp_301_h1
+2026-03-08 19:14:23 - INFO - viterbi processed marker 800 for msp_301_h1
+2026-03-08 19:15:58 - INFO - viterbi processed marker 900 for msp_301_h1
+2026-03-08 19:17:34 - INFO - viterbi processed marker 1000 for msp_301_h1
+2026-03-08 19:19:10 - INFO - viterbi processed marker 1100 for msp_301_h1
+2026-03-08 19:20:45 - INFO - viterbi processed marker 1200 for msp_301_h1
+2026-03-08 19:22:21 - INFO - viterbi processed marker 1300 for msp_301_h1
+2026-03-08 19:23:56 - INFO - viterbi processed marker 1400 for msp_301_h1
+2026-03-08 19:25:32 - INFO - viterbi processed marker 1500 for msp_301_h1
+2026-03-08 19:27:08 - INFO - viterbi processed marker 1600 for msp_301_h1
+2026-03-08 19:28:44 - INFO - viterbi processed marker 1700 for msp_301_h1
+2026-03-08 19:30:19 - INFO - viterbi processed marker 1800 for msp_301_h1
+2026-03-08 19:31:54 - INFO - viterbi processed marker 1900 for msp_301_h1
+2026-03-08 19:33:30 - INFO - viterbi processed marker 2000 for msp_301_h1
+2026-03-08 19:33:30 - INFO - haplotype 3 (msp_301_h1) processed
+2026-03-08 20:03:52 - INFO - forward pass complete for msp_301_h2
+2026-03-08 20:34:11 - INFO - backward pass complete for msp_301_h2
+2026-03-08 20:34:51 - INFO - global ancestry calculated for msp_301_h2
+2026-03-08 20:36:25 - INFO - viterbi processed marker 100 for msp_301_h2
+2026-03-08 20:38:01 - INFO - viterbi processed marker 200 for msp_301_h2
+2026-03-08 20:39:36 - INFO - viterbi processed marker 300 for msp_301_h2
+2026-03-08 20:41:11 - INFO - viterbi processed marker 400 for msp_301_h2
+2026-03-08 20:42:46 - INFO - viterbi processed marker 500 for msp_301_h2
+2026-03-08 20:44:21 - INFO - viterbi processed marker 600 for msp_301_h2
+2026-03-08 20:45:56 - INFO - viterbi processed marker 700 for msp_301_h2
+2026-03-08 20:47:31 - INFO - viterbi processed marker 800 for msp_301_h2
+2026-03-08 20:49:07 - INFO - viterbi processed marker 900 for msp_301_h2
+2026-03-08 20:50:42 - INFO - viterbi processed marker 1000 for msp_301_h2
+2026-03-08 20:52:17 - INFO - viterbi processed marker 1100 for msp_301_h2
+2026-03-08 20:53:53 - INFO - viterbi processed marker 1200 for msp_301_h2
+2026-03-08 20:55:29 - INFO - viterbi processed marker 1300 for msp_301_h2
+2026-03-08 20:57:04 - INFO - viterbi processed marker 1400 for msp_301_h2
+2026-03-08 20:58:40 - INFO - viterbi processed marker 1500 for msp_301_h2
+2026-03-08 21:00:15 - INFO - viterbi processed marker 1600 for msp_301_h2
+2026-03-08 21:01:49 - INFO - viterbi processed marker 1700 for msp_301_h2
+2026-03-08 21:03:24 - INFO - viterbi processed marker 1800 for msp_301_h2
+2026-03-08 21:05:00 - INFO - viterbi processed marker 1900 for msp_301_h2
+2026-03-08 21:06:36 - INFO - viterbi processed marker 2000 for msp_301_h2
+2026-03-08 21:06:36 - INFO - haplotype 4 (msp_301_h2) processed
+2026-03-08 21:06:36 - INFO - all haplotypes processed
+2026-03-08 21:06:36 - INFO - results saved
