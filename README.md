@@ -150,7 +150,7 @@ Because ground-truth local ancestry labels are unavailable in real datasets, we 
 
 We computed:
 * Overall concordance
-$$Concordance = \frac{\\#\text{ markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
+$$Concordance = \frac{\text{\# markers where ancestry matches FLARE}}{\text{total \# markers}}$$
 * Per-ancestry concordance
 Agreement computed separately for AFR, EUR, and AMR
 
@@ -169,6 +169,13 @@ Simulation will allow us to validate **(need to double check this!)**
 
 We evaluated compuational efficiency by measuring:
 - Total runtime
+
+For small subset test, FLARE performance:
+```
+Wallclock Time      :  12 seconds
+End Time            :  09:56 PM PDT on 08 Mar 2026
+java -jar ../../../flare.jar     out=small_subset min-mac=22  68.11s user 3.11s system 521% cpu 13.646 total
+```
 - Scaling with number of markers
 to assess our tools computational efficiency relative to FLARE
 

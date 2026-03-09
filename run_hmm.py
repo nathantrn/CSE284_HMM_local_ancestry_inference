@@ -301,7 +301,7 @@ def main():
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
-        print("wrong number of arguments! please run the the command in the following format: python train_hmm.py <ref VCF> <ref panel> <admixed VCF> <genetic map> <model params> [-o -g]")
+        print("wrong number of arguments! please run the the command in the following format: python run_hmm.py <ref VCF> <ref panel> <admixed VCF> <genetic map> <model params> [-o -g -l]")
     
     else:
         main()
