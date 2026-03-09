@@ -1,2 +1,844 @@
-2026-03-08 22:02:29 - INFO - starting pipeline
-2026-03-08 22:02:33 - INFO - inputs processed
+2026-03-09 12:26:26 - INFO - starting pipeline
+2026-03-09 12:26:26 - INFO - inputs processed
+2026-03-09 12:28:27 - INFO - forward pass complete for HG00740_h1
+2026-03-09 12:30:13 - INFO - backward pass complete for HG00740_h1
+2026-03-09 12:30:24 - INFO - global ancestry calculated for HG00740_h1
+2026-03-09 12:30:27 - INFO - viterbi processed marker 100 for HG00740_h1
+2026-03-09 12:30:30 - INFO - viterbi processed marker 200 for HG00740_h1
+2026-03-09 12:30:32 - INFO - viterbi processed marker 300 for HG00740_h1
+2026-03-09 12:30:35 - INFO - viterbi processed marker 400 for HG00740_h1
+2026-03-09 12:30:38 - INFO - viterbi processed marker 500 for HG00740_h1
+2026-03-09 12:30:41 - INFO - viterbi processed marker 600 for HG00740_h1
+2026-03-09 12:30:44 - INFO - viterbi processed marker 700 for HG00740_h1
+2026-03-09 12:30:47 - INFO - viterbi processed marker 800 for HG00740_h1
+2026-03-09 12:30:50 - INFO - viterbi processed marker 900 for HG00740_h1
+2026-03-09 12:30:53 - INFO - viterbi processed marker 1000 for HG00740_h1
+2026-03-09 12:30:56 - INFO - viterbi processed marker 1100 for HG00740_h1
+2026-03-09 12:30:58 - INFO - viterbi processed marker 1200 for HG00740_h1
+2026-03-09 12:31:01 - INFO - viterbi processed marker 1300 for HG00740_h1
+2026-03-09 12:31:04 - INFO - viterbi processed marker 1400 for HG00740_h1
+2026-03-09 12:31:07 - INFO - viterbi processed marker 1500 for HG00740_h1
+2026-03-09 12:31:10 - INFO - viterbi processed marker 1600 for HG00740_h1
+2026-03-09 12:31:13 - INFO - viterbi processed marker 1700 for HG00740_h1
+2026-03-09 12:31:16 - INFO - viterbi processed marker 1800 for HG00740_h1
+2026-03-09 12:31:19 - INFO - viterbi processed marker 1900 for HG00740_h1
+2026-03-09 12:31:21 - INFO - viterbi processed marker 2000 for HG00740_h1
+2026-03-09 12:31:24 - INFO - viterbi processed marker 2100 for HG00740_h1
+2026-03-09 12:31:27 - INFO - viterbi processed marker 2200 for HG00740_h1
+2026-03-09 12:31:30 - INFO - viterbi processed marker 2300 for HG00740_h1
+2026-03-09 12:31:33 - INFO - viterbi processed marker 2400 for HG00740_h1
+2026-03-09 12:31:36 - INFO - viterbi processed marker 2500 for HG00740_h1
+2026-03-09 12:31:39 - INFO - viterbi processed marker 2600 for HG00740_h1
+2026-03-09 12:31:42 - INFO - viterbi processed marker 2700 for HG00740_h1
+2026-03-09 12:31:45 - INFO - viterbi processed marker 2800 for HG00740_h1
+2026-03-09 12:31:48 - INFO - viterbi processed marker 2900 for HG00740_h1
+2026-03-09 12:31:51 - INFO - viterbi processed marker 3000 for HG00740_h1
+2026-03-09 12:31:55 - INFO - viterbi processed marker 3100 for HG00740_h1
+2026-03-09 12:31:58 - INFO - viterbi processed marker 3200 for HG00740_h1
+2026-03-09 12:32:01 - INFO - viterbi processed marker 3300 for HG00740_h1
+2026-03-09 12:32:04 - INFO - viterbi processed marker 3400 for HG00740_h1
+2026-03-09 12:32:07 - INFO - viterbi processed marker 3500 for HG00740_h1
+2026-03-09 12:32:10 - INFO - viterbi processed marker 3600 for HG00740_h1
+2026-03-09 12:32:13 - INFO - viterbi processed marker 3700 for HG00740_h1
+2026-03-09 12:32:16 - INFO - viterbi processed marker 3800 for HG00740_h1
+2026-03-09 12:32:18 - INFO - haplotype 1 (HG00740_h1) processed
+2026-03-09 12:34:08 - INFO - forward pass complete for HG00740_h2
+2026-03-09 12:35:59 - INFO - backward pass complete for HG00740_h2
+2026-03-09 12:36:12 - INFO - global ancestry calculated for HG00740_h2
+2026-03-09 12:36:15 - INFO - viterbi processed marker 100 for HG00740_h2
+2026-03-09 12:36:18 - INFO - viterbi processed marker 200 for HG00740_h2
+2026-03-09 12:36:21 - INFO - viterbi processed marker 300 for HG00740_h2
+2026-03-09 12:36:24 - INFO - viterbi processed marker 400 for HG00740_h2
+2026-03-09 12:36:27 - INFO - viterbi processed marker 500 for HG00740_h2
+2026-03-09 12:36:30 - INFO - viterbi processed marker 600 for HG00740_h2
+2026-03-09 12:36:33 - INFO - viterbi processed marker 700 for HG00740_h2
+2026-03-09 12:36:36 - INFO - viterbi processed marker 800 for HG00740_h2
+2026-03-09 12:36:39 - INFO - viterbi processed marker 900 for HG00740_h2
+2026-03-09 12:36:42 - INFO - viterbi processed marker 1000 for HG00740_h2
+2026-03-09 12:36:45 - INFO - viterbi processed marker 1100 for HG00740_h2
+2026-03-09 12:36:48 - INFO - viterbi processed marker 1200 for HG00740_h2
+2026-03-09 12:36:51 - INFO - viterbi processed marker 1300 for HG00740_h2
+2026-03-09 12:36:54 - INFO - viterbi processed marker 1400 for HG00740_h2
+2026-03-09 12:36:57 - INFO - viterbi processed marker 1500 for HG00740_h2
+2026-03-09 12:37:00 - INFO - viterbi processed marker 1600 for HG00740_h2
+2026-03-09 12:37:03 - INFO - viterbi processed marker 1700 for HG00740_h2
+2026-03-09 12:37:06 - INFO - viterbi processed marker 1800 for HG00740_h2
+2026-03-09 12:37:09 - INFO - viterbi processed marker 1900 for HG00740_h2
+2026-03-09 12:37:12 - INFO - viterbi processed marker 2000 for HG00740_h2
+2026-03-09 12:37:15 - INFO - viterbi processed marker 2100 for HG00740_h2
+2026-03-09 12:37:18 - INFO - viterbi processed marker 2200 for HG00740_h2
+2026-03-09 12:37:21 - INFO - viterbi processed marker 2300 for HG00740_h2
+2026-03-09 12:37:24 - INFO - viterbi processed marker 2400 for HG00740_h2
+2026-03-09 12:37:27 - INFO - viterbi processed marker 2500 for HG00740_h2
+2026-03-09 12:37:30 - INFO - viterbi processed marker 2600 for HG00740_h2
+2026-03-09 12:37:34 - INFO - viterbi processed marker 2700 for HG00740_h2
+2026-03-09 12:37:37 - INFO - viterbi processed marker 2800 for HG00740_h2
+2026-03-09 12:37:40 - INFO - viterbi processed marker 2900 for HG00740_h2
+2026-03-09 12:37:43 - INFO - viterbi processed marker 3000 for HG00740_h2
+2026-03-09 12:37:46 - INFO - viterbi processed marker 3100 for HG00740_h2
+2026-03-09 12:37:49 - INFO - viterbi processed marker 3200 for HG00740_h2
+2026-03-09 12:37:52 - INFO - viterbi processed marker 3300 for HG00740_h2
+2026-03-09 12:37:55 - INFO - viterbi processed marker 3400 for HG00740_h2
+2026-03-09 12:37:58 - INFO - viterbi processed marker 3500 for HG00740_h2
+2026-03-09 12:38:01 - INFO - viterbi processed marker 3600 for HG00740_h2
+2026-03-09 12:38:03 - INFO - viterbi processed marker 3700 for HG00740_h2
+2026-03-09 12:38:06 - INFO - viterbi processed marker 3800 for HG00740_h2
+2026-03-09 12:38:09 - INFO - haplotype 2 (HG00740_h2) processed
+2026-03-09 12:39:54 - INFO - forward pass complete for HG01142_h1
+2026-03-09 12:41:47 - INFO - backward pass complete for HG01142_h1
+2026-03-09 12:41:58 - INFO - global ancestry calculated for HG01142_h1
+2026-03-09 12:42:01 - INFO - viterbi processed marker 100 for HG01142_h1
+2026-03-09 12:42:04 - INFO - viterbi processed marker 200 for HG01142_h1
+2026-03-09 12:42:07 - INFO - viterbi processed marker 300 for HG01142_h1
+2026-03-09 12:42:10 - INFO - viterbi processed marker 400 for HG01142_h1
+2026-03-09 12:42:13 - INFO - viterbi processed marker 500 for HG01142_h1
+2026-03-09 12:42:15 - INFO - viterbi processed marker 600 for HG01142_h1
+2026-03-09 12:42:18 - INFO - viterbi processed marker 700 for HG01142_h1
+2026-03-09 12:42:21 - INFO - viterbi processed marker 800 for HG01142_h1
+2026-03-09 12:42:24 - INFO - viterbi processed marker 900 for HG01142_h1
+2026-03-09 12:42:27 - INFO - viterbi processed marker 1000 for HG01142_h1
+2026-03-09 12:42:30 - INFO - viterbi processed marker 1100 for HG01142_h1
+2026-03-09 12:42:33 - INFO - viterbi processed marker 1200 for HG01142_h1
+2026-03-09 12:42:36 - INFO - viterbi processed marker 1300 for HG01142_h1
+2026-03-09 12:42:39 - INFO - viterbi processed marker 1400 for HG01142_h1
+2026-03-09 12:42:42 - INFO - viterbi processed marker 1500 for HG01142_h1
+2026-03-09 12:42:45 - INFO - viterbi processed marker 1600 for HG01142_h1
+2026-03-09 12:42:47 - INFO - viterbi processed marker 1700 for HG01142_h1
+2026-03-09 12:42:50 - INFO - viterbi processed marker 1800 for HG01142_h1
+2026-03-09 12:42:53 - INFO - viterbi processed marker 1900 for HG01142_h1
+2026-03-09 12:42:56 - INFO - viterbi processed marker 2000 for HG01142_h1
+2026-03-09 12:43:00 - INFO - viterbi processed marker 2100 for HG01142_h1
+2026-03-09 12:43:03 - INFO - viterbi processed marker 2200 for HG01142_h1
+2026-03-09 12:43:06 - INFO - viterbi processed marker 2300 for HG01142_h1
+2026-03-09 12:43:09 - INFO - viterbi processed marker 2400 for HG01142_h1
+2026-03-09 12:43:12 - INFO - viterbi processed marker 2500 for HG01142_h1
+2026-03-09 12:43:15 - INFO - viterbi processed marker 2600 for HG01142_h1
+2026-03-09 12:43:18 - INFO - viterbi processed marker 2700 for HG01142_h1
+2026-03-09 12:43:20 - INFO - viterbi processed marker 2800 for HG01142_h1
+2026-03-09 12:43:23 - INFO - viterbi processed marker 2900 for HG01142_h1
+2026-03-09 12:43:26 - INFO - viterbi processed marker 3000 for HG01142_h1
+2026-03-09 12:43:29 - INFO - viterbi processed marker 3100 for HG01142_h1
+2026-03-09 12:43:32 - INFO - viterbi processed marker 3200 for HG01142_h1
+2026-03-09 12:43:35 - INFO - viterbi processed marker 3300 for HG01142_h1
+2026-03-09 12:43:38 - INFO - viterbi processed marker 3400 for HG01142_h1
+2026-03-09 12:43:41 - INFO - viterbi processed marker 3500 for HG01142_h1
+2026-03-09 12:43:44 - INFO - viterbi processed marker 3600 for HG01142_h1
+2026-03-09 12:43:47 - INFO - viterbi processed marker 3700 for HG01142_h1
+2026-03-09 12:43:50 - INFO - viterbi processed marker 3800 for HG01142_h1
+2026-03-09 12:43:52 - INFO - haplotype 3 (HG01142_h1) processed
+2026-03-09 12:45:41 - INFO - forward pass complete for HG01142_h2
+2026-03-09 12:47:29 - INFO - backward pass complete for HG01142_h2
+2026-03-09 12:47:40 - INFO - global ancestry calculated for HG01142_h2
+2026-03-09 12:47:43 - INFO - viterbi processed marker 100 for HG01142_h2
+2026-03-09 12:47:46 - INFO - viterbi processed marker 200 for HG01142_h2
+2026-03-09 12:47:49 - INFO - viterbi processed marker 300 for HG01142_h2
+2026-03-09 12:47:52 - INFO - viterbi processed marker 400 for HG01142_h2
+2026-03-09 12:47:55 - INFO - viterbi processed marker 500 for HG01142_h2
+2026-03-09 12:47:58 - INFO - viterbi processed marker 600 for HG01142_h2
+2026-03-09 12:48:01 - INFO - viterbi processed marker 700 for HG01142_h2
+2026-03-09 12:48:04 - INFO - viterbi processed marker 800 for HG01142_h2
+2026-03-09 12:48:07 - INFO - viterbi processed marker 900 for HG01142_h2
+2026-03-09 12:48:10 - INFO - viterbi processed marker 1000 for HG01142_h2
+2026-03-09 12:48:12 - INFO - viterbi processed marker 1100 for HG01142_h2
+2026-03-09 12:48:15 - INFO - viterbi processed marker 1200 for HG01142_h2
+2026-03-09 12:48:18 - INFO - viterbi processed marker 1300 for HG01142_h2
+2026-03-09 12:48:21 - INFO - viterbi processed marker 1400 for HG01142_h2
+2026-03-09 12:48:24 - INFO - viterbi processed marker 1500 for HG01142_h2
+2026-03-09 12:48:27 - INFO - viterbi processed marker 1600 for HG01142_h2
+2026-03-09 12:48:30 - INFO - viterbi processed marker 1700 for HG01142_h2
+2026-03-09 12:48:33 - INFO - viterbi processed marker 1800 for HG01142_h2
+2026-03-09 12:48:36 - INFO - viterbi processed marker 1900 for HG01142_h2
+2026-03-09 12:48:40 - INFO - viterbi processed marker 2000 for HG01142_h2
+2026-03-09 12:48:44 - INFO - viterbi processed marker 2100 for HG01142_h2
+2026-03-09 12:48:47 - INFO - viterbi processed marker 2200 for HG01142_h2
+2026-03-09 12:48:50 - INFO - viterbi processed marker 2300 for HG01142_h2
+2026-03-09 12:48:53 - INFO - viterbi processed marker 2400 for HG01142_h2
+2026-03-09 12:48:56 - INFO - viterbi processed marker 2500 for HG01142_h2
+2026-03-09 12:48:59 - INFO - viterbi processed marker 2600 for HG01142_h2
+2026-03-09 12:49:02 - INFO - viterbi processed marker 2700 for HG01142_h2
+2026-03-09 12:49:05 - INFO - viterbi processed marker 2800 for HG01142_h2
+2026-03-09 12:49:08 - INFO - viterbi processed marker 2900 for HG01142_h2
+2026-03-09 12:49:11 - INFO - viterbi processed marker 3000 for HG01142_h2
+2026-03-09 12:49:14 - INFO - viterbi processed marker 3100 for HG01142_h2
+2026-03-09 12:49:17 - INFO - viterbi processed marker 3200 for HG01142_h2
+2026-03-09 12:49:20 - INFO - viterbi processed marker 3300 for HG01142_h2
+2026-03-09 12:49:23 - INFO - viterbi processed marker 3400 for HG01142_h2
+2026-03-09 12:49:26 - INFO - viterbi processed marker 3500 for HG01142_h2
+2026-03-09 12:49:29 - INFO - viterbi processed marker 3600 for HG01142_h2
+2026-03-09 12:49:32 - INFO - viterbi processed marker 3700 for HG01142_h2
+2026-03-09 12:49:35 - INFO - viterbi processed marker 3800 for HG01142_h2
+2026-03-09 12:49:36 - INFO - haplotype 4 (HG01142_h2) processed
+2026-03-09 12:51:28 - INFO - forward pass complete for HG01161_h1
+2026-03-09 12:53:16 - INFO - backward pass complete for HG01161_h1
+2026-03-09 12:53:27 - INFO - global ancestry calculated for HG01161_h1
+2026-03-09 12:53:30 - INFO - viterbi processed marker 100 for HG01161_h1
+2026-03-09 12:53:33 - INFO - viterbi processed marker 200 for HG01161_h1
+2026-03-09 12:53:36 - INFO - viterbi processed marker 300 for HG01161_h1
+2026-03-09 12:53:39 - INFO - viterbi processed marker 400 for HG01161_h1
+2026-03-09 12:53:42 - INFO - viterbi processed marker 500 for HG01161_h1
+2026-03-09 12:53:45 - INFO - viterbi processed marker 600 for HG01161_h1
+2026-03-09 12:53:48 - INFO - viterbi processed marker 700 for HG01161_h1
+2026-03-09 12:53:51 - INFO - viterbi processed marker 800 for HG01161_h1
+2026-03-09 12:53:53 - INFO - viterbi processed marker 900 for HG01161_h1
+2026-03-09 12:53:56 - INFO - viterbi processed marker 1000 for HG01161_h1
+2026-03-09 12:53:59 - INFO - viterbi processed marker 1100 for HG01161_h1
+2026-03-09 12:54:02 - INFO - viterbi processed marker 1200 for HG01161_h1
+2026-03-09 12:54:05 - INFO - viterbi processed marker 1300 for HG01161_h1
+2026-03-09 12:54:08 - INFO - viterbi processed marker 1400 for HG01161_h1
+2026-03-09 12:54:11 - INFO - viterbi processed marker 1500 for HG01161_h1
+2026-03-09 12:54:14 - INFO - viterbi processed marker 1600 for HG01161_h1
+2026-03-09 12:54:16 - INFO - viterbi processed marker 1700 for HG01161_h1
+2026-03-09 12:54:19 - INFO - viterbi processed marker 1800 for HG01161_h1
+2026-03-09 12:54:22 - INFO - viterbi processed marker 1900 for HG01161_h1
+2026-03-09 12:54:25 - INFO - viterbi processed marker 2000 for HG01161_h1
+2026-03-09 12:54:28 - INFO - viterbi processed marker 2100 for HG01161_h1
+2026-03-09 12:54:31 - INFO - viterbi processed marker 2200 for HG01161_h1
+2026-03-09 12:54:34 - INFO - viterbi processed marker 2300 for HG01161_h1
+2026-03-09 12:54:36 - INFO - viterbi processed marker 2400 for HG01161_h1
+2026-03-09 12:54:39 - INFO - viterbi processed marker 2500 for HG01161_h1
+2026-03-09 12:54:43 - INFO - viterbi processed marker 2600 for HG01161_h1
+2026-03-09 12:54:46 - INFO - viterbi processed marker 2700 for HG01161_h1
+2026-03-09 12:54:49 - INFO - viterbi processed marker 2800 for HG01161_h1
+2026-03-09 12:54:52 - INFO - viterbi processed marker 2900 for HG01161_h1
+2026-03-09 12:54:55 - INFO - viterbi processed marker 3000 for HG01161_h1
+2026-03-09 12:54:58 - INFO - viterbi processed marker 3100 for HG01161_h1
+2026-03-09 12:55:01 - INFO - viterbi processed marker 3200 for HG01161_h1
+2026-03-09 12:55:04 - INFO - viterbi processed marker 3300 for HG01161_h1
+2026-03-09 12:55:07 - INFO - viterbi processed marker 3400 for HG01161_h1
+2026-03-09 12:55:09 - INFO - viterbi processed marker 3500 for HG01161_h1
+2026-03-09 12:55:13 - INFO - viterbi processed marker 3600 for HG01161_h1
+2026-03-09 12:55:16 - INFO - viterbi processed marker 3700 for HG01161_h1
+2026-03-09 12:55:19 - INFO - viterbi processed marker 3800 for HG01161_h1
+2026-03-09 12:55:20 - INFO - haplotype 5 (HG01161_h1) processed
+2026-03-09 12:57:06 - INFO - forward pass complete for HG01161_h2
+2026-03-09 12:58:57 - INFO - backward pass complete for HG01161_h2
+2026-03-09 12:59:08 - INFO - global ancestry calculated for HG01161_h2
+2026-03-09 12:59:11 - INFO - viterbi processed marker 100 for HG01161_h2
+2026-03-09 12:59:14 - INFO - viterbi processed marker 200 for HG01161_h2
+2026-03-09 12:59:17 - INFO - viterbi processed marker 300 for HG01161_h2
+2026-03-09 12:59:20 - INFO - viterbi processed marker 400 for HG01161_h2
+2026-03-09 12:59:23 - INFO - viterbi processed marker 500 for HG01161_h2
+2026-03-09 12:59:26 - INFO - viterbi processed marker 600 for HG01161_h2
+2026-03-09 12:59:29 - INFO - viterbi processed marker 700 for HG01161_h2
+2026-03-09 12:59:32 - INFO - viterbi processed marker 800 for HG01161_h2
+2026-03-09 12:59:35 - INFO - viterbi processed marker 900 for HG01161_h2
+2026-03-09 12:59:38 - INFO - viterbi processed marker 1000 for HG01161_h2
+2026-03-09 12:59:41 - INFO - viterbi processed marker 1100 for HG01161_h2
+2026-03-09 12:59:44 - INFO - viterbi processed marker 1200 for HG01161_h2
+2026-03-09 12:59:47 - INFO - viterbi processed marker 1300 for HG01161_h2
+2026-03-09 12:59:49 - INFO - viterbi processed marker 1400 for HG01161_h2
+2026-03-09 12:59:52 - INFO - viterbi processed marker 1500 for HG01161_h2
+2026-03-09 12:59:55 - INFO - viterbi processed marker 1600 for HG01161_h2
+2026-03-09 12:59:58 - INFO - viterbi processed marker 1700 for HG01161_h2
+2026-03-09 13:00:01 - INFO - viterbi processed marker 1800 for HG01161_h2
+2026-03-09 13:00:04 - INFO - viterbi processed marker 1900 for HG01161_h2
+2026-03-09 13:00:07 - INFO - viterbi processed marker 2000 for HG01161_h2
+2026-03-09 13:00:10 - INFO - viterbi processed marker 2100 for HG01161_h2
+2026-03-09 13:00:13 - INFO - viterbi processed marker 2200 for HG01161_h2
+2026-03-09 13:00:16 - INFO - viterbi processed marker 2300 for HG01161_h2
+2026-03-09 13:00:18 - INFO - viterbi processed marker 2400 for HG01161_h2
+2026-03-09 13:00:21 - INFO - viterbi processed marker 2500 for HG01161_h2
+2026-03-09 13:00:24 - INFO - viterbi processed marker 2600 for HG01161_h2
+2026-03-09 13:00:27 - INFO - viterbi processed marker 2700 for HG01161_h2
+2026-03-09 13:00:30 - INFO - viterbi processed marker 2800 for HG01161_h2
+2026-03-09 13:00:34 - INFO - viterbi processed marker 2900 for HG01161_h2
+2026-03-09 13:00:37 - INFO - viterbi processed marker 3000 for HG01161_h2
+2026-03-09 13:00:40 - INFO - viterbi processed marker 3100 for HG01161_h2
+2026-03-09 13:00:43 - INFO - viterbi processed marker 3200 for HG01161_h2
+2026-03-09 13:00:46 - INFO - viterbi processed marker 3300 for HG01161_h2
+2026-03-09 13:00:49 - INFO - viterbi processed marker 3400 for HG01161_h2
+2026-03-09 13:00:52 - INFO - viterbi processed marker 3500 for HG01161_h2
+2026-03-09 13:00:54 - INFO - viterbi processed marker 3600 for HG01161_h2
+2026-03-09 13:00:57 - INFO - viterbi processed marker 3700 for HG01161_h2
+2026-03-09 13:01:00 - INFO - viterbi processed marker 3800 for HG01161_h2
+2026-03-09 13:01:02 - INFO - haplotype 6 (HG01161_h2) processed
+2026-03-09 13:02:52 - INFO - forward pass complete for HG01173_h1
+2026-03-09 13:04:44 - INFO - backward pass complete for HG01173_h1
+2026-03-09 13:04:57 - INFO - global ancestry calculated for HG01173_h1
+2026-03-09 13:05:00 - INFO - viterbi processed marker 100 for HG01173_h1
+2026-03-09 13:05:04 - INFO - viterbi processed marker 200 for HG01173_h1
+2026-03-09 13:05:07 - INFO - viterbi processed marker 300 for HG01173_h1
+2026-03-09 13:05:10 - INFO - viterbi processed marker 400 for HG01173_h1
+2026-03-09 13:05:14 - INFO - viterbi processed marker 500 for HG01173_h1
+2026-03-09 13:05:17 - INFO - viterbi processed marker 600 for HG01173_h1
+2026-03-09 13:05:20 - INFO - viterbi processed marker 700 for HG01173_h1
+2026-03-09 13:05:23 - INFO - viterbi processed marker 800 for HG01173_h1
+2026-03-09 13:05:26 - INFO - viterbi processed marker 900 for HG01173_h1
+2026-03-09 13:05:29 - INFO - viterbi processed marker 1000 for HG01173_h1
+2026-03-09 13:05:32 - INFO - viterbi processed marker 1100 for HG01173_h1
+2026-03-09 13:05:35 - INFO - viterbi processed marker 1200 for HG01173_h1
+2026-03-09 13:05:38 - INFO - viterbi processed marker 1300 for HG01173_h1
+2026-03-09 13:05:41 - INFO - viterbi processed marker 1400 for HG01173_h1
+2026-03-09 13:05:44 - INFO - viterbi processed marker 1500 for HG01173_h1
+2026-03-09 13:05:47 - INFO - viterbi processed marker 1600 for HG01173_h1
+2026-03-09 13:05:50 - INFO - viterbi processed marker 1700 for HG01173_h1
+2026-03-09 13:05:53 - INFO - viterbi processed marker 1800 for HG01173_h1
+2026-03-09 13:05:56 - INFO - viterbi processed marker 1900 for HG01173_h1
+2026-03-09 13:05:59 - INFO - viterbi processed marker 2000 for HG01173_h1
+2026-03-09 13:06:02 - INFO - viterbi processed marker 2100 for HG01173_h1
+2026-03-09 13:06:05 - INFO - viterbi processed marker 2200 for HG01173_h1
+2026-03-09 13:06:08 - INFO - viterbi processed marker 2300 for HG01173_h1
+2026-03-09 13:06:11 - INFO - viterbi processed marker 2400 for HG01173_h1
+2026-03-09 13:06:15 - INFO - viterbi processed marker 2500 for HG01173_h1
+2026-03-09 13:06:18 - INFO - viterbi processed marker 2600 for HG01173_h1
+2026-03-09 13:06:21 - INFO - viterbi processed marker 2700 for HG01173_h1
+2026-03-09 13:06:24 - INFO - viterbi processed marker 2800 for HG01173_h1
+2026-03-09 13:06:27 - INFO - viterbi processed marker 2900 for HG01173_h1
+2026-03-09 13:06:29 - INFO - viterbi processed marker 3000 for HG01173_h1
+2026-03-09 13:06:32 - INFO - viterbi processed marker 3100 for HG01173_h1
+2026-03-09 13:06:35 - INFO - viterbi processed marker 3200 for HG01173_h1
+2026-03-09 13:06:38 - INFO - viterbi processed marker 3300 for HG01173_h1
+2026-03-09 13:06:41 - INFO - viterbi processed marker 3400 for HG01173_h1
+2026-03-09 13:06:44 - INFO - viterbi processed marker 3500 for HG01173_h1
+2026-03-09 13:06:47 - INFO - viterbi processed marker 3600 for HG01173_h1
+2026-03-09 13:06:50 - INFO - viterbi processed marker 3700 for HG01173_h1
+2026-03-09 13:06:53 - INFO - viterbi processed marker 3800 for HG01173_h1
+2026-03-09 13:06:54 - INFO - haplotype 7 (HG01173_h1) processed
+2026-03-09 13:08:43 - INFO - forward pass complete for HG01173_h2
+2026-03-09 13:10:30 - INFO - backward pass complete for HG01173_h2
+2026-03-09 13:10:41 - INFO - global ancestry calculated for HG01173_h2
+2026-03-09 13:10:44 - INFO - viterbi processed marker 100 for HG01173_h2
+2026-03-09 13:10:48 - INFO - viterbi processed marker 200 for HG01173_h2
+2026-03-09 13:10:51 - INFO - viterbi processed marker 300 for HG01173_h2
+2026-03-09 13:10:54 - INFO - viterbi processed marker 400 for HG01173_h2
+2026-03-09 13:10:57 - INFO - viterbi processed marker 500 for HG01173_h2
+2026-03-09 13:11:00 - INFO - viterbi processed marker 600 for HG01173_h2
+2026-03-09 13:11:04 - INFO - viterbi processed marker 700 for HG01173_h2
+2026-03-09 13:11:07 - INFO - viterbi processed marker 800 for HG01173_h2
+2026-03-09 13:11:09 - INFO - viterbi processed marker 900 for HG01173_h2
+2026-03-09 13:11:12 - INFO - viterbi processed marker 1000 for HG01173_h2
+2026-03-09 13:11:15 - INFO - viterbi processed marker 1100 for HG01173_h2
+2026-03-09 13:11:18 - INFO - viterbi processed marker 1200 for HG01173_h2
+2026-03-09 13:11:21 - INFO - viterbi processed marker 1300 for HG01173_h2
+2026-03-09 13:11:24 - INFO - viterbi processed marker 1400 for HG01173_h2
+2026-03-09 13:11:26 - INFO - viterbi processed marker 1500 for HG01173_h2
+2026-03-09 13:11:29 - INFO - viterbi processed marker 1600 for HG01173_h2
+2026-03-09 13:11:32 - INFO - viterbi processed marker 1700 for HG01173_h2
+2026-03-09 13:11:35 - INFO - viterbi processed marker 1800 for HG01173_h2
+2026-03-09 13:11:38 - INFO - viterbi processed marker 1900 for HG01173_h2
+2026-03-09 13:11:41 - INFO - viterbi processed marker 2000 for HG01173_h2
+2026-03-09 13:11:44 - INFO - viterbi processed marker 2100 for HG01173_h2
+2026-03-09 13:11:47 - INFO - viterbi processed marker 2200 for HG01173_h2
+2026-03-09 13:11:50 - INFO - viterbi processed marker 2300 for HG01173_h2
+2026-03-09 13:11:53 - INFO - viterbi processed marker 2400 for HG01173_h2
+2026-03-09 13:11:55 - INFO - viterbi processed marker 2500 for HG01173_h2
+2026-03-09 13:11:59 - INFO - viterbi processed marker 2600 for HG01173_h2
+2026-03-09 13:12:02 - INFO - viterbi processed marker 2700 for HG01173_h2
+2026-03-09 13:12:05 - INFO - viterbi processed marker 2800 for HG01173_h2
+2026-03-09 13:12:08 - INFO - viterbi processed marker 2900 for HG01173_h2
+2026-03-09 13:12:10 - INFO - viterbi processed marker 3000 for HG01173_h2
+2026-03-09 13:12:13 - INFO - viterbi processed marker 3100 for HG01173_h2
+2026-03-09 13:12:16 - INFO - viterbi processed marker 3200 for HG01173_h2
+2026-03-09 13:12:19 - INFO - viterbi processed marker 3300 for HG01173_h2
+2026-03-09 13:12:22 - INFO - viterbi processed marker 3400 for HG01173_h2
+2026-03-09 13:12:25 - INFO - viterbi processed marker 3500 for HG01173_h2
+2026-03-09 13:12:27 - INFO - viterbi processed marker 3600 for HG01173_h2
+2026-03-09 13:12:30 - INFO - viterbi processed marker 3700 for HG01173_h2
+2026-03-09 13:12:33 - INFO - viterbi processed marker 3800 for HG01173_h2
+2026-03-09 13:12:35 - INFO - haplotype 8 (HG01173_h2) processed
+2026-03-09 13:14:23 - INFO - forward pass complete for HG01197_h1
+2026-03-09 13:16:12 - INFO - backward pass complete for HG01197_h1
+2026-03-09 13:16:23 - INFO - global ancestry calculated for HG01197_h1
+2026-03-09 13:16:26 - INFO - viterbi processed marker 100 for HG01197_h1
+2026-03-09 13:16:28 - INFO - viterbi processed marker 200 for HG01197_h1
+2026-03-09 13:16:31 - INFO - viterbi processed marker 300 for HG01197_h1
+2026-03-09 13:16:34 - INFO - viterbi processed marker 400 for HG01197_h1
+2026-03-09 13:16:37 - INFO - viterbi processed marker 500 for HG01197_h1
+2026-03-09 13:16:40 - INFO - viterbi processed marker 600 for HG01197_h1
+2026-03-09 13:16:43 - INFO - viterbi processed marker 700 for HG01197_h1
+2026-03-09 13:16:46 - INFO - viterbi processed marker 800 for HG01197_h1
+2026-03-09 13:16:49 - INFO - viterbi processed marker 900 for HG01197_h1
+2026-03-09 13:16:52 - INFO - viterbi processed marker 1000 for HG01197_h1
+2026-03-09 13:16:55 - INFO - viterbi processed marker 1100 for HG01197_h1
+2026-03-09 13:16:57 - INFO - viterbi processed marker 1200 for HG01197_h1
+2026-03-09 13:17:00 - INFO - viterbi processed marker 1300 for HG01197_h1
+2026-03-09 13:17:03 - INFO - viterbi processed marker 1400 for HG01197_h1
+2026-03-09 13:17:06 - INFO - viterbi processed marker 1500 for HG01197_h1
+2026-03-09 13:17:09 - INFO - viterbi processed marker 1600 for HG01197_h1
+2026-03-09 13:17:12 - INFO - viterbi processed marker 1700 for HG01197_h1
+2026-03-09 13:17:15 - INFO - viterbi processed marker 1800 for HG01197_h1
+2026-03-09 13:17:17 - INFO - viterbi processed marker 1900 for HG01197_h1
+2026-03-09 13:17:20 - INFO - viterbi processed marker 2000 for HG01197_h1
+2026-03-09 13:17:23 - INFO - viterbi processed marker 2100 for HG01197_h1
+2026-03-09 13:17:26 - INFO - viterbi processed marker 2200 for HG01197_h1
+2026-03-09 13:17:29 - INFO - viterbi processed marker 2300 for HG01197_h1
+2026-03-09 13:17:32 - INFO - viterbi processed marker 2400 for HG01197_h1
+2026-03-09 13:17:34 - INFO - viterbi processed marker 2500 for HG01197_h1
+2026-03-09 13:17:37 - INFO - viterbi processed marker 2600 for HG01197_h1
+2026-03-09 13:17:41 - INFO - viterbi processed marker 2700 for HG01197_h1
+2026-03-09 13:17:44 - INFO - viterbi processed marker 2800 for HG01197_h1
+2026-03-09 13:17:47 - INFO - viterbi processed marker 2900 for HG01197_h1
+2026-03-09 13:17:50 - INFO - viterbi processed marker 3000 for HG01197_h1
+2026-03-09 13:17:53 - INFO - viterbi processed marker 3100 for HG01197_h1
+2026-03-09 13:17:56 - INFO - viterbi processed marker 3200 for HG01197_h1
+2026-03-09 13:17:59 - INFO - viterbi processed marker 3300 for HG01197_h1
+2026-03-09 13:18:02 - INFO - viterbi processed marker 3400 for HG01197_h1
+2026-03-09 13:18:04 - INFO - viterbi processed marker 3500 for HG01197_h1
+2026-03-09 13:18:07 - INFO - viterbi processed marker 3600 for HG01197_h1
+2026-03-09 13:18:10 - INFO - viterbi processed marker 3700 for HG01197_h1
+2026-03-09 13:18:13 - INFO - viterbi processed marker 3800 for HG01197_h1
+2026-03-09 13:18:15 - INFO - haplotype 9 (HG01197_h1) processed
+2026-03-09 13:20:00 - INFO - forward pass complete for HG01197_h2
+2026-03-09 13:21:48 - INFO - backward pass complete for HG01197_h2
+2026-03-09 13:21:59 - INFO - global ancestry calculated for HG01197_h2
+2026-03-09 13:22:02 - INFO - viterbi processed marker 100 for HG01197_h2
+2026-03-09 13:22:05 - INFO - viterbi processed marker 200 for HG01197_h2
+2026-03-09 13:22:07 - INFO - viterbi processed marker 300 for HG01197_h2
+2026-03-09 13:22:10 - INFO - viterbi processed marker 400 for HG01197_h2
+2026-03-09 13:22:13 - INFO - viterbi processed marker 500 for HG01197_h2
+2026-03-09 13:22:16 - INFO - viterbi processed marker 600 for HG01197_h2
+2026-03-09 13:22:19 - INFO - viterbi processed marker 700 for HG01197_h2
+2026-03-09 13:22:22 - INFO - viterbi processed marker 800 for HG01197_h2
+2026-03-09 13:22:25 - INFO - viterbi processed marker 900 for HG01197_h2
+2026-03-09 13:22:28 - INFO - viterbi processed marker 1000 for HG01197_h2
+2026-03-09 13:22:30 - INFO - viterbi processed marker 1100 for HG01197_h2
+2026-03-09 13:22:33 - INFO - viterbi processed marker 1200 for HG01197_h2
+2026-03-09 13:22:36 - INFO - viterbi processed marker 1300 for HG01197_h2
+2026-03-09 13:22:39 - INFO - viterbi processed marker 1400 for HG01197_h2
+2026-03-09 13:22:42 - INFO - viterbi processed marker 1500 for HG01197_h2
+2026-03-09 13:22:45 - INFO - viterbi processed marker 1600 for HG01197_h2
+2026-03-09 13:22:48 - INFO - viterbi processed marker 1700 for HG01197_h2
+2026-03-09 13:22:51 - INFO - viterbi processed marker 1800 for HG01197_h2
+2026-03-09 13:22:54 - INFO - viterbi processed marker 1900 for HG01197_h2
+2026-03-09 13:22:56 - INFO - viterbi processed marker 2000 for HG01197_h2
+2026-03-09 13:22:59 - INFO - viterbi processed marker 2100 for HG01197_h2
+2026-03-09 13:23:02 - INFO - viterbi processed marker 2200 for HG01197_h2
+2026-03-09 13:23:06 - INFO - viterbi processed marker 2300 for HG01197_h2
+2026-03-09 13:23:09 - INFO - viterbi processed marker 2400 for HG01197_h2
+2026-03-09 13:23:12 - INFO - viterbi processed marker 2500 for HG01197_h2
+2026-03-09 13:23:15 - INFO - viterbi processed marker 2600 for HG01197_h2
+2026-03-09 13:23:18 - INFO - viterbi processed marker 2700 for HG01197_h2
+2026-03-09 13:23:20 - INFO - viterbi processed marker 2800 for HG01197_h2
+2026-03-09 13:23:23 - INFO - viterbi processed marker 2900 for HG01197_h2
+2026-03-09 13:23:26 - INFO - viterbi processed marker 3000 for HG01197_h2
+2026-03-09 13:23:29 - INFO - viterbi processed marker 3100 for HG01197_h2
+2026-03-09 13:23:32 - INFO - viterbi processed marker 3200 for HG01197_h2
+2026-03-09 13:23:35 - INFO - viterbi processed marker 3300 for HG01197_h2
+2026-03-09 13:23:38 - INFO - viterbi processed marker 3400 for HG01197_h2
+2026-03-09 13:23:41 - INFO - viterbi processed marker 3500 for HG01197_h2
+2026-03-09 13:23:44 - INFO - viterbi processed marker 3600 for HG01197_h2
+2026-03-09 13:23:46 - INFO - viterbi processed marker 3700 for HG01197_h2
+2026-03-09 13:23:49 - INFO - viterbi processed marker 3800 for HG01197_h2
+2026-03-09 13:23:51 - INFO - haplotype 10 (HG01197_h2) processed
+2026-03-09 13:25:37 - INFO - forward pass complete for HG01200_h1
+2026-03-09 13:27:27 - INFO - backward pass complete for HG01200_h1
+2026-03-09 13:27:38 - INFO - global ancestry calculated for HG01200_h1
+2026-03-09 13:27:41 - INFO - viterbi processed marker 100 for HG01200_h1
+2026-03-09 13:27:44 - INFO - viterbi processed marker 200 for HG01200_h1
+2026-03-09 13:27:46 - INFO - viterbi processed marker 300 for HG01200_h1
+2026-03-09 13:27:49 - INFO - viterbi processed marker 400 for HG01200_h1
+2026-03-09 13:27:52 - INFO - viterbi processed marker 500 for HG01200_h1
+2026-03-09 13:27:55 - INFO - viterbi processed marker 600 for HG01200_h1
+2026-03-09 13:27:58 - INFO - viterbi processed marker 700 for HG01200_h1
+2026-03-09 13:28:01 - INFO - viterbi processed marker 800 for HG01200_h1
+2026-03-09 13:28:04 - INFO - viterbi processed marker 900 for HG01200_h1
+2026-03-09 13:28:06 - INFO - viterbi processed marker 1000 for HG01200_h1
+2026-03-09 13:28:09 - INFO - viterbi processed marker 1100 for HG01200_h1
+2026-03-09 13:28:12 - INFO - viterbi processed marker 1200 for HG01200_h1
+2026-03-09 13:28:15 - INFO - viterbi processed marker 1300 for HG01200_h1
+2026-03-09 13:28:18 - INFO - viterbi processed marker 1400 for HG01200_h1
+2026-03-09 13:28:21 - INFO - viterbi processed marker 1500 for HG01200_h1
+2026-03-09 13:28:23 - INFO - viterbi processed marker 1600 for HG01200_h1
+2026-03-09 13:28:26 - INFO - viterbi processed marker 1700 for HG01200_h1
+2026-03-09 13:28:29 - INFO - viterbi processed marker 1800 for HG01200_h1
+2026-03-09 13:28:34 - INFO - viterbi processed marker 1900 for HG01200_h1
+2026-03-09 13:28:37 - INFO - viterbi processed marker 2000 for HG01200_h1
+2026-03-09 13:28:40 - INFO - viterbi processed marker 2100 for HG01200_h1
+2026-03-09 13:28:43 - INFO - viterbi processed marker 2200 for HG01200_h1
+2026-03-09 13:28:46 - INFO - viterbi processed marker 2300 for HG01200_h1
+2026-03-09 13:28:49 - INFO - viterbi processed marker 2400 for HG01200_h1
+2026-03-09 13:28:52 - INFO - viterbi processed marker 2500 for HG01200_h1
+2026-03-09 13:28:55 - INFO - viterbi processed marker 2600 for HG01200_h1
+2026-03-09 13:28:58 - INFO - viterbi processed marker 2700 for HG01200_h1
+2026-03-09 13:29:01 - INFO - viterbi processed marker 2800 for HG01200_h1
+2026-03-09 13:29:03 - INFO - viterbi processed marker 2900 for HG01200_h1
+2026-03-09 13:29:06 - INFO - viterbi processed marker 3000 for HG01200_h1
+2026-03-09 13:29:09 - INFO - viterbi processed marker 3100 for HG01200_h1
+2026-03-09 13:29:12 - INFO - viterbi processed marker 3200 for HG01200_h1
+2026-03-09 13:29:15 - INFO - viterbi processed marker 3300 for HG01200_h1
+2026-03-09 13:29:18 - INFO - viterbi processed marker 3400 for HG01200_h1
+2026-03-09 13:29:21 - INFO - viterbi processed marker 3500 for HG01200_h1
+2026-03-09 13:29:23 - INFO - viterbi processed marker 3600 for HG01200_h1
+2026-03-09 13:29:26 - INFO - viterbi processed marker 3700 for HG01200_h1
+2026-03-09 13:29:29 - INFO - viterbi processed marker 3800 for HG01200_h1
+2026-03-09 13:29:31 - INFO - haplotype 11 (HG01200_h1) processed
+2026-03-09 13:31:17 - INFO - forward pass complete for HG01200_h2
+2026-03-09 13:33:03 - INFO - backward pass complete for HG01200_h2
+2026-03-09 13:33:14 - INFO - global ancestry calculated for HG01200_h2
+2026-03-09 13:33:17 - INFO - viterbi processed marker 100 for HG01200_h2
+2026-03-09 13:33:20 - INFO - viterbi processed marker 200 for HG01200_h2
+2026-03-09 13:33:23 - INFO - viterbi processed marker 300 for HG01200_h2
+2026-03-09 13:33:26 - INFO - viterbi processed marker 400 for HG01200_h2
+2026-03-09 13:33:29 - INFO - viterbi processed marker 500 for HG01200_h2
+2026-03-09 13:33:31 - INFO - viterbi processed marker 600 for HG01200_h2
+2026-03-09 13:33:34 - INFO - viterbi processed marker 700 for HG01200_h2
+2026-03-09 13:33:37 - INFO - viterbi processed marker 800 for HG01200_h2
+2026-03-09 13:33:40 - INFO - viterbi processed marker 900 for HG01200_h2
+2026-03-09 13:33:43 - INFO - viterbi processed marker 1000 for HG01200_h2
+2026-03-09 13:33:46 - INFO - viterbi processed marker 1100 for HG01200_h2
+2026-03-09 13:33:49 - INFO - viterbi processed marker 1200 for HG01200_h2
+2026-03-09 13:33:52 - INFO - viterbi processed marker 1300 for HG01200_h2
+2026-03-09 13:33:55 - INFO - viterbi processed marker 1400 for HG01200_h2
+2026-03-09 13:33:57 - INFO - viterbi processed marker 1500 for HG01200_h2
+2026-03-09 13:34:00 - INFO - viterbi processed marker 1600 for HG01200_h2
+2026-03-09 13:34:03 - INFO - viterbi processed marker 1700 for HG01200_h2
+2026-03-09 13:34:06 - INFO - viterbi processed marker 1800 for HG01200_h2
+2026-03-09 13:34:09 - INFO - viterbi processed marker 1900 for HG01200_h2
+2026-03-09 13:34:12 - INFO - viterbi processed marker 2000 for HG01200_h2
+2026-03-09 13:34:15 - INFO - viterbi processed marker 2100 for HG01200_h2
+2026-03-09 13:34:17 - INFO - viterbi processed marker 2200 for HG01200_h2
+2026-03-09 13:34:20 - INFO - viterbi processed marker 2300 for HG01200_h2
+2026-03-09 13:34:23 - INFO - viterbi processed marker 2400 for HG01200_h2
+2026-03-09 13:34:26 - INFO - viterbi processed marker 2500 for HG01200_h2
+2026-03-09 13:34:29 - INFO - viterbi processed marker 2600 for HG01200_h2
+2026-03-09 13:34:32 - INFO - viterbi processed marker 2700 for HG01200_h2
+2026-03-09 13:34:35 - INFO - viterbi processed marker 2800 for HG01200_h2
+2026-03-09 13:34:37 - INFO - viterbi processed marker 2900 for HG01200_h2
+2026-03-09 13:34:40 - INFO - viterbi processed marker 3000 for HG01200_h2
+2026-03-09 13:34:43 - INFO - viterbi processed marker 3100 for HG01200_h2
+2026-03-09 13:34:46 - INFO - viterbi processed marker 3200 for HG01200_h2
+2026-03-09 13:34:49 - INFO - viterbi processed marker 3300 for HG01200_h2
+2026-03-09 13:34:52 - INFO - viterbi processed marker 3400 for HG01200_h2
+2026-03-09 13:34:55 - INFO - viterbi processed marker 3500 for HG01200_h2
+2026-03-09 13:34:57 - INFO - viterbi processed marker 3600 for HG01200_h2
+2026-03-09 13:35:00 - INFO - viterbi processed marker 3700 for HG01200_h2
+2026-03-09 13:35:03 - INFO - viterbi processed marker 3800 for HG01200_h2
+2026-03-09 13:35:05 - INFO - haplotype 12 (HG01200_h2) processed
+2026-03-09 13:36:51 - INFO - forward pass complete for HG01205_h1
+2026-03-09 13:38:39 - INFO - backward pass complete for HG01205_h1
+2026-03-09 13:38:50 - INFO - global ancestry calculated for HG01205_h1
+2026-03-09 13:38:53 - INFO - viterbi processed marker 100 for HG01205_h1
+2026-03-09 13:38:56 - INFO - viterbi processed marker 200 for HG01205_h1
+2026-03-09 13:38:58 - INFO - viterbi processed marker 300 for HG01205_h1
+2026-03-09 13:39:01 - INFO - viterbi processed marker 400 for HG01205_h1
+2026-03-09 13:39:04 - INFO - viterbi processed marker 500 for HG01205_h1
+2026-03-09 13:39:07 - INFO - viterbi processed marker 600 for HG01205_h1
+2026-03-09 13:39:10 - INFO - viterbi processed marker 700 for HG01205_h1
+2026-03-09 13:39:13 - INFO - viterbi processed marker 800 for HG01205_h1
+2026-03-09 13:39:16 - INFO - viterbi processed marker 900 for HG01205_h1
+2026-03-09 13:39:19 - INFO - viterbi processed marker 1000 for HG01205_h1
+2026-03-09 13:39:22 - INFO - viterbi processed marker 1100 for HG01205_h1
+2026-03-09 13:39:24 - INFO - viterbi processed marker 1200 for HG01205_h1
+2026-03-09 13:39:27 - INFO - viterbi processed marker 1300 for HG01205_h1
+2026-03-09 13:39:30 - INFO - viterbi processed marker 1400 for HG01205_h1
+2026-03-09 13:39:33 - INFO - viterbi processed marker 1500 for HG01205_h1
+2026-03-09 13:39:36 - INFO - viterbi processed marker 1600 for HG01205_h1
+2026-03-09 13:39:39 - INFO - viterbi processed marker 1700 for HG01205_h1
+2026-03-09 13:39:42 - INFO - viterbi processed marker 1800 for HG01205_h1
+2026-03-09 13:39:45 - INFO - viterbi processed marker 1900 for HG01205_h1
+2026-03-09 13:39:48 - INFO - viterbi processed marker 2000 for HG01205_h1
+2026-03-09 13:39:51 - INFO - viterbi processed marker 2100 for HG01205_h1
+2026-03-09 13:39:53 - INFO - viterbi processed marker 2200 for HG01205_h1
+2026-03-09 13:39:56 - INFO - viterbi processed marker 2300 for HG01205_h1
+2026-03-09 13:39:59 - INFO - viterbi processed marker 2400 for HG01205_h1
+2026-03-09 13:40:02 - INFO - viterbi processed marker 2500 for HG01205_h1
+2026-03-09 13:40:05 - INFO - viterbi processed marker 2600 for HG01205_h1
+2026-03-09 13:40:08 - INFO - viterbi processed marker 2700 for HG01205_h1
+2026-03-09 13:40:11 - INFO - viterbi processed marker 2800 for HG01205_h1
+2026-03-09 13:40:14 - INFO - viterbi processed marker 2900 for HG01205_h1
+2026-03-09 13:40:17 - INFO - viterbi processed marker 3000 for HG01205_h1
+2026-03-09 13:40:20 - INFO - viterbi processed marker 3100 for HG01205_h1
+2026-03-09 13:40:23 - INFO - viterbi processed marker 3200 for HG01205_h1
+2026-03-09 13:40:26 - INFO - viterbi processed marker 3300 for HG01205_h1
+2026-03-09 13:40:29 - INFO - viterbi processed marker 3400 for HG01205_h1
+2026-03-09 13:40:32 - INFO - viterbi processed marker 3500 for HG01205_h1
+2026-03-09 13:40:35 - INFO - viterbi processed marker 3600 for HG01205_h1
+2026-03-09 13:40:37 - INFO - viterbi processed marker 3700 for HG01205_h1
+2026-03-09 13:40:40 - INFO - viterbi processed marker 3800 for HG01205_h1
+2026-03-09 13:40:42 - INFO - haplotype 13 (HG01205_h1) processed
+2026-03-09 13:42:28 - INFO - forward pass complete for HG01205_h2
+2026-03-09 13:44:15 - INFO - backward pass complete for HG01205_h2
+2026-03-09 13:44:26 - INFO - global ancestry calculated for HG01205_h2
+2026-03-09 13:44:29 - INFO - viterbi processed marker 100 for HG01205_h2
+2026-03-09 13:44:32 - INFO - viterbi processed marker 200 for HG01205_h2
+2026-03-09 13:44:36 - INFO - viterbi processed marker 300 for HG01205_h2
+2026-03-09 13:44:39 - INFO - viterbi processed marker 400 for HG01205_h2
+2026-03-09 13:44:42 - INFO - viterbi processed marker 500 for HG01205_h2
+2026-03-09 13:44:45 - INFO - viterbi processed marker 600 for HG01205_h2
+2026-03-09 13:44:48 - INFO - viterbi processed marker 700 for HG01205_h2
+2026-03-09 13:44:50 - INFO - viterbi processed marker 800 for HG01205_h2
+2026-03-09 13:44:53 - INFO - viterbi processed marker 900 for HG01205_h2
+2026-03-09 13:44:56 - INFO - viterbi processed marker 1000 for HG01205_h2
+2026-03-09 13:44:59 - INFO - viterbi processed marker 1100 for HG01205_h2
+2026-03-09 13:45:02 - INFO - viterbi processed marker 1200 for HG01205_h2
+2026-03-09 13:45:05 - INFO - viterbi processed marker 1300 for HG01205_h2
+2026-03-09 13:45:08 - INFO - viterbi processed marker 1400 for HG01205_h2
+2026-03-09 13:45:11 - INFO - viterbi processed marker 1500 for HG01205_h2
+2026-03-09 13:45:14 - INFO - viterbi processed marker 1600 for HG01205_h2
+2026-03-09 13:45:17 - INFO - viterbi processed marker 1700 for HG01205_h2
+2026-03-09 13:45:20 - INFO - viterbi processed marker 1800 for HG01205_h2
+2026-03-09 13:45:23 - INFO - viterbi processed marker 1900 for HG01205_h2
+2026-03-09 13:45:26 - INFO - viterbi processed marker 2000 for HG01205_h2
+2026-03-09 13:45:29 - INFO - viterbi processed marker 2100 for HG01205_h2
+2026-03-09 13:45:32 - INFO - viterbi processed marker 2200 for HG01205_h2
+2026-03-09 13:45:35 - INFO - viterbi processed marker 2300 for HG01205_h2
+2026-03-09 13:45:38 - INFO - viterbi processed marker 2400 for HG01205_h2
+2026-03-09 13:45:41 - INFO - viterbi processed marker 2500 for HG01205_h2
+2026-03-09 13:45:44 - INFO - viterbi processed marker 2600 for HG01205_h2
+2026-03-09 13:45:47 - INFO - viterbi processed marker 2700 for HG01205_h2
+2026-03-09 13:45:50 - INFO - viterbi processed marker 2800 for HG01205_h2
+2026-03-09 13:45:53 - INFO - viterbi processed marker 2900 for HG01205_h2
+2026-03-09 13:45:56 - INFO - viterbi processed marker 3000 for HG01205_h2
+2026-03-09 13:45:59 - INFO - viterbi processed marker 3100 for HG01205_h2
+2026-03-09 13:46:01 - INFO - viterbi processed marker 3200 for HG01205_h2
+2026-03-09 13:46:04 - INFO - viterbi processed marker 3300 for HG01205_h2
+2026-03-09 13:46:07 - INFO - viterbi processed marker 3400 for HG01205_h2
+2026-03-09 13:46:10 - INFO - viterbi processed marker 3500 for HG01205_h2
+2026-03-09 13:46:13 - INFO - viterbi processed marker 3600 for HG01205_h2
+2026-03-09 13:46:16 - INFO - viterbi processed marker 3700 for HG01205_h2
+2026-03-09 13:46:19 - INFO - viterbi processed marker 3800 for HG01205_h2
+2026-03-09 13:46:21 - INFO - haplotype 14 (HG01205_h2) processed
+2026-03-09 13:48:12 - INFO - forward pass complete for HG01248_h1
+2026-03-09 13:50:02 - INFO - backward pass complete for HG01248_h1
+2026-03-09 13:50:14 - INFO - global ancestry calculated for HG01248_h1
+2026-03-09 13:50:17 - INFO - viterbi processed marker 100 for HG01248_h1
+2026-03-09 13:50:20 - INFO - viterbi processed marker 200 for HG01248_h1
+2026-03-09 13:50:23 - INFO - viterbi processed marker 300 for HG01248_h1
+2026-03-09 13:50:26 - INFO - viterbi processed marker 400 for HG01248_h1
+2026-03-09 13:50:29 - INFO - viterbi processed marker 500 for HG01248_h1
+2026-03-09 13:50:32 - INFO - viterbi processed marker 600 for HG01248_h1
+2026-03-09 13:50:35 - INFO - viterbi processed marker 700 for HG01248_h1
+2026-03-09 13:50:38 - INFO - viterbi processed marker 800 for HG01248_h1
+2026-03-09 13:50:41 - INFO - viterbi processed marker 900 for HG01248_h1
+2026-03-09 13:50:44 - INFO - viterbi processed marker 1000 for HG01248_h1
+2026-03-09 13:50:47 - INFO - viterbi processed marker 1100 for HG01248_h1
+2026-03-09 13:50:50 - INFO - viterbi processed marker 1200 for HG01248_h1
+2026-03-09 13:50:53 - INFO - viterbi processed marker 1300 for HG01248_h1
+2026-03-09 13:50:56 - INFO - viterbi processed marker 1400 for HG01248_h1
+2026-03-09 13:50:59 - INFO - viterbi processed marker 1500 for HG01248_h1
+2026-03-09 13:51:01 - INFO - viterbi processed marker 1600 for HG01248_h1
+2026-03-09 13:51:04 - INFO - viterbi processed marker 1700 for HG01248_h1
+2026-03-09 13:51:07 - INFO - viterbi processed marker 1800 for HG01248_h1
+2026-03-09 13:51:10 - INFO - viterbi processed marker 1900 for HG01248_h1
+2026-03-09 13:51:13 - INFO - viterbi processed marker 2000 for HG01248_h1
+2026-03-09 13:51:18 - INFO - viterbi processed marker 2100 for HG01248_h1
+2026-03-09 13:51:21 - INFO - viterbi processed marker 2200 for HG01248_h1
+2026-03-09 13:51:24 - INFO - viterbi processed marker 2300 for HG01248_h1
+2026-03-09 13:51:27 - INFO - viterbi processed marker 2400 for HG01248_h1
+2026-03-09 13:51:30 - INFO - viterbi processed marker 2500 for HG01248_h1
+2026-03-09 13:51:33 - INFO - viterbi processed marker 2600 for HG01248_h1
+2026-03-09 13:51:36 - INFO - viterbi processed marker 2700 for HG01248_h1
+2026-03-09 13:51:39 - INFO - viterbi processed marker 2800 for HG01248_h1
+2026-03-09 13:51:42 - INFO - viterbi processed marker 2900 for HG01248_h1
+2026-03-09 13:51:45 - INFO - viterbi processed marker 3000 for HG01248_h1
+2026-03-09 13:51:48 - INFO - viterbi processed marker 3100 for HG01248_h1
+2026-03-09 13:51:51 - INFO - viterbi processed marker 3200 for HG01248_h1
+2026-03-09 13:51:54 - INFO - viterbi processed marker 3300 for HG01248_h1
+2026-03-09 13:51:57 - INFO - viterbi processed marker 3400 for HG01248_h1
+2026-03-09 13:52:00 - INFO - viterbi processed marker 3500 for HG01248_h1
+2026-03-09 13:52:04 - INFO - viterbi processed marker 3600 for HG01248_h1
+2026-03-09 13:52:07 - INFO - viterbi processed marker 3700 for HG01248_h1
+2026-03-09 13:52:10 - INFO - viterbi processed marker 3800 for HG01248_h1
+2026-03-09 13:52:12 - INFO - haplotype 15 (HG01248_h1) processed
+2026-03-09 13:54:06 - INFO - forward pass complete for HG01248_h2
+2026-03-09 13:55:56 - INFO - backward pass complete for HG01248_h2
+2026-03-09 13:56:08 - INFO - global ancestry calculated for HG01248_h2
+2026-03-09 13:56:10 - INFO - viterbi processed marker 100 for HG01248_h2
+2026-03-09 13:56:13 - INFO - viterbi processed marker 200 for HG01248_h2
+2026-03-09 13:56:17 - INFO - viterbi processed marker 300 for HG01248_h2
+2026-03-09 13:56:21 - INFO - viterbi processed marker 400 for HG01248_h2
+2026-03-09 13:56:24 - INFO - viterbi processed marker 500 for HG01248_h2
+2026-03-09 13:56:27 - INFO - viterbi processed marker 600 for HG01248_h2
+2026-03-09 13:56:30 - INFO - viterbi processed marker 700 for HG01248_h2
+2026-03-09 13:56:33 - INFO - viterbi processed marker 800 for HG01248_h2
+2026-03-09 13:56:36 - INFO - viterbi processed marker 900 for HG01248_h2
+2026-03-09 13:56:39 - INFO - viterbi processed marker 1000 for HG01248_h2
+2026-03-09 13:56:42 - INFO - viterbi processed marker 1100 for HG01248_h2
+2026-03-09 13:56:45 - INFO - viterbi processed marker 1200 for HG01248_h2
+2026-03-09 13:56:48 - INFO - viterbi processed marker 1300 for HG01248_h2
+2026-03-09 13:56:51 - INFO - viterbi processed marker 1400 for HG01248_h2
+2026-03-09 13:56:54 - INFO - viterbi processed marker 1500 for HG01248_h2
+2026-03-09 13:56:57 - INFO - viterbi processed marker 1600 for HG01248_h2
+2026-03-09 13:57:00 - INFO - viterbi processed marker 1700 for HG01248_h2
+2026-03-09 13:57:04 - INFO - viterbi processed marker 1800 for HG01248_h2
+2026-03-09 13:57:07 - INFO - viterbi processed marker 1900 for HG01248_h2
+2026-03-09 13:57:10 - INFO - viterbi processed marker 2000 for HG01248_h2
+2026-03-09 13:57:13 - INFO - viterbi processed marker 2100 for HG01248_h2
+2026-03-09 13:57:16 - INFO - viterbi processed marker 2200 for HG01248_h2
+2026-03-09 13:57:19 - INFO - viterbi processed marker 2300 for HG01248_h2
+2026-03-09 13:57:22 - INFO - viterbi processed marker 2400 for HG01248_h2
+2026-03-09 13:57:25 - INFO - viterbi processed marker 2500 for HG01248_h2
+2026-03-09 13:57:28 - INFO - viterbi processed marker 2600 for HG01248_h2
+2026-03-09 13:57:31 - INFO - viterbi processed marker 2700 for HG01248_h2
+2026-03-09 13:57:34 - INFO - viterbi processed marker 2800 for HG01248_h2
+2026-03-09 13:57:36 - INFO - viterbi processed marker 2900 for HG01248_h2
+2026-03-09 13:57:39 - INFO - viterbi processed marker 3000 for HG01248_h2
+2026-03-09 13:57:42 - INFO - viterbi processed marker 3100 for HG01248_h2
+2026-03-09 13:57:45 - INFO - viterbi processed marker 3200 for HG01248_h2
+2026-03-09 13:57:49 - INFO - viterbi processed marker 3300 for HG01248_h2
+2026-03-09 13:57:52 - INFO - viterbi processed marker 3400 for HG01248_h2
+2026-03-09 13:57:56 - INFO - viterbi processed marker 3500 for HG01248_h2
+2026-03-09 13:57:59 - INFO - viterbi processed marker 3600 for HG01248_h2
+2026-03-09 13:58:02 - INFO - viterbi processed marker 3700 for HG01248_h2
+2026-03-09 13:58:05 - INFO - viterbi processed marker 3800 for HG01248_h2
+2026-03-09 13:58:07 - INFO - haplotype 16 (HG01248_h2) processed
+2026-03-09 14:00:01 - INFO - forward pass complete for HG01250_h1
+2026-03-09 14:01:58 - INFO - backward pass complete for HG01250_h1
+2026-03-09 14:02:10 - INFO - global ancestry calculated for HG01250_h1
+2026-03-09 14:02:13 - INFO - viterbi processed marker 100 for HG01250_h1
+2026-03-09 14:02:16 - INFO - viterbi processed marker 200 for HG01250_h1
+2026-03-09 14:02:19 - INFO - viterbi processed marker 300 for HG01250_h1
+2026-03-09 14:02:22 - INFO - viterbi processed marker 400 for HG01250_h1
+2026-03-09 14:02:25 - INFO - viterbi processed marker 500 for HG01250_h1
+2026-03-09 14:02:28 - INFO - viterbi processed marker 600 for HG01250_h1
+2026-03-09 14:02:31 - INFO - viterbi processed marker 700 for HG01250_h1
+2026-03-09 14:02:34 - INFO - viterbi processed marker 800 for HG01250_h1
+2026-03-09 14:02:37 - INFO - viterbi processed marker 900 for HG01250_h1
+2026-03-09 14:02:42 - INFO - viterbi processed marker 1000 for HG01250_h1
+2026-03-09 14:02:45 - INFO - viterbi processed marker 1100 for HG01250_h1
+2026-03-09 14:02:49 - INFO - viterbi processed marker 1200 for HG01250_h1
+2026-03-09 14:02:52 - INFO - viterbi processed marker 1300 for HG01250_h1
+2026-03-09 14:02:56 - INFO - viterbi processed marker 1400 for HG01250_h1
+2026-03-09 14:02:59 - INFO - viterbi processed marker 1500 for HG01250_h1
+2026-03-09 14:03:02 - INFO - viterbi processed marker 1600 for HG01250_h1
+2026-03-09 14:03:05 - INFO - viterbi processed marker 1700 for HG01250_h1
+2026-03-09 14:03:08 - INFO - viterbi processed marker 1800 for HG01250_h1
+2026-03-09 14:03:11 - INFO - viterbi processed marker 1900 for HG01250_h1
+2026-03-09 14:03:14 - INFO - viterbi processed marker 2000 for HG01250_h1
+2026-03-09 14:03:17 - INFO - viterbi processed marker 2100 for HG01250_h1
+2026-03-09 14:03:20 - INFO - viterbi processed marker 2200 for HG01250_h1
+2026-03-09 14:03:23 - INFO - viterbi processed marker 2300 for HG01250_h1
+2026-03-09 14:03:26 - INFO - viterbi processed marker 2400 for HG01250_h1
+2026-03-09 14:03:30 - INFO - viterbi processed marker 2500 for HG01250_h1
+2026-03-09 14:03:33 - INFO - viterbi processed marker 2600 for HG01250_h1
+2026-03-09 14:03:38 - INFO - viterbi processed marker 2700 for HG01250_h1
+2026-03-09 14:03:41 - INFO - viterbi processed marker 2800 for HG01250_h1
+2026-03-09 14:03:44 - INFO - viterbi processed marker 2900 for HG01250_h1
+2026-03-09 14:03:47 - INFO - viterbi processed marker 3000 for HG01250_h1
+2026-03-09 14:03:50 - INFO - viterbi processed marker 3100 for HG01250_h1
+2026-03-09 14:03:53 - INFO - viterbi processed marker 3200 for HG01250_h1
+2026-03-09 14:03:56 - INFO - viterbi processed marker 3300 for HG01250_h1
+2026-03-09 14:04:00 - INFO - viterbi processed marker 3400 for HG01250_h1
+2026-03-09 14:04:04 - INFO - viterbi processed marker 3500 for HG01250_h1
+2026-03-09 14:04:07 - INFO - viterbi processed marker 3600 for HG01250_h1
+2026-03-09 14:04:10 - INFO - viterbi processed marker 3700 for HG01250_h1
+2026-03-09 14:04:13 - INFO - viterbi processed marker 3800 for HG01250_h1
+2026-03-09 14:04:15 - INFO - haplotype 17 (HG01250_h1) processed
+2026-03-09 14:06:12 - INFO - forward pass complete for HG01250_h2
+2026-03-09 14:08:00 - INFO - backward pass complete for HG01250_h2
+2026-03-09 14:08:12 - INFO - global ancestry calculated for HG01250_h2
+2026-03-09 14:08:15 - INFO - viterbi processed marker 100 for HG01250_h2
+2026-03-09 14:08:18 - INFO - viterbi processed marker 200 for HG01250_h2
+2026-03-09 14:08:20 - INFO - viterbi processed marker 300 for HG01250_h2
+2026-03-09 14:08:23 - INFO - viterbi processed marker 400 for HG01250_h2
+2026-03-09 14:08:26 - INFO - viterbi processed marker 500 for HG01250_h2
+2026-03-09 14:08:29 - INFO - viterbi processed marker 600 for HG01250_h2
+2026-03-09 14:08:32 - INFO - viterbi processed marker 700 for HG01250_h2
+2026-03-09 14:08:35 - INFO - viterbi processed marker 800 for HG01250_h2
+2026-03-09 14:08:38 - INFO - viterbi processed marker 900 for HG01250_h2
+2026-03-09 14:08:41 - INFO - viterbi processed marker 1000 for HG01250_h2
+2026-03-09 14:08:44 - INFO - viterbi processed marker 1100 for HG01250_h2
+2026-03-09 14:08:47 - INFO - viterbi processed marker 1200 for HG01250_h2
+2026-03-09 14:08:50 - INFO - viterbi processed marker 1300 for HG01250_h2
+2026-03-09 14:08:53 - INFO - viterbi processed marker 1400 for HG01250_h2
+2026-03-09 14:08:56 - INFO - viterbi processed marker 1500 for HG01250_h2
+2026-03-09 14:08:59 - INFO - viterbi processed marker 1600 for HG01250_h2
+2026-03-09 14:09:02 - INFO - viterbi processed marker 1700 for HG01250_h2
+2026-03-09 14:09:05 - INFO - viterbi processed marker 1800 for HG01250_h2
+2026-03-09 14:09:08 - INFO - viterbi processed marker 1900 for HG01250_h2
+2026-03-09 14:09:11 - INFO - viterbi processed marker 2000 for HG01250_h2
+2026-03-09 14:09:14 - INFO - viterbi processed marker 2100 for HG01250_h2
+2026-03-09 14:09:16 - INFO - viterbi processed marker 2200 for HG01250_h2
+2026-03-09 14:09:19 - INFO - viterbi processed marker 2300 for HG01250_h2
+2026-03-09 14:09:22 - INFO - viterbi processed marker 2400 for HG01250_h2
+2026-03-09 14:09:25 - INFO - viterbi processed marker 2500 for HG01250_h2
+2026-03-09 14:09:28 - INFO - viterbi processed marker 2600 for HG01250_h2
+2026-03-09 14:09:32 - INFO - viterbi processed marker 2700 for HG01250_h2
+2026-03-09 14:09:36 - INFO - viterbi processed marker 2800 for HG01250_h2
+2026-03-09 14:09:39 - INFO - viterbi processed marker 2900 for HG01250_h2
+2026-03-09 14:09:42 - INFO - viterbi processed marker 3000 for HG01250_h2
+2026-03-09 14:09:45 - INFO - viterbi processed marker 3100 for HG01250_h2
+2026-03-09 14:09:48 - INFO - viterbi processed marker 3200 for HG01250_h2
+2026-03-09 14:09:51 - INFO - viterbi processed marker 3300 for HG01250_h2
+2026-03-09 14:09:55 - INFO - viterbi processed marker 3400 for HG01250_h2
+2026-03-09 14:09:57 - INFO - viterbi processed marker 3500 for HG01250_h2
+2026-03-09 14:10:00 - INFO - viterbi processed marker 3600 for HG01250_h2
+2026-03-09 14:10:03 - INFO - viterbi processed marker 3700 for HG01250_h2
+2026-03-09 14:10:06 - INFO - viterbi processed marker 3800 for HG01250_h2
+2026-03-09 14:10:08 - INFO - haplotype 18 (HG01250_h2) processed
+2026-03-09 14:11:58 - INFO - forward pass complete for HG00554_h1
+2026-03-09 14:13:52 - INFO - backward pass complete for HG00554_h1
+2026-03-09 14:14:03 - INFO - global ancestry calculated for HG00554_h1
+2026-03-09 14:14:06 - INFO - viterbi processed marker 100 for HG00554_h1
+2026-03-09 14:14:09 - INFO - viterbi processed marker 200 for HG00554_h1
+2026-03-09 14:14:12 - INFO - viterbi processed marker 300 for HG00554_h1
+2026-03-09 14:14:15 - INFO - viterbi processed marker 400 for HG00554_h1
+2026-03-09 14:14:18 - INFO - viterbi processed marker 500 for HG00554_h1
+2026-03-09 14:14:21 - INFO - viterbi processed marker 600 for HG00554_h1
+2026-03-09 14:14:24 - INFO - viterbi processed marker 700 for HG00554_h1
+2026-03-09 14:14:27 - INFO - viterbi processed marker 800 for HG00554_h1
+2026-03-09 14:14:30 - INFO - viterbi processed marker 900 for HG00554_h1
+2026-03-09 14:14:33 - INFO - viterbi processed marker 1000 for HG00554_h1
+2026-03-09 14:14:36 - INFO - viterbi processed marker 1100 for HG00554_h1
+2026-03-09 14:14:39 - INFO - viterbi processed marker 1200 for HG00554_h1
+2026-03-09 14:14:42 - INFO - viterbi processed marker 1300 for HG00554_h1
+2026-03-09 14:14:45 - INFO - viterbi processed marker 1400 for HG00554_h1
+2026-03-09 14:14:48 - INFO - viterbi processed marker 1500 for HG00554_h1
+2026-03-09 14:14:51 - INFO - viterbi processed marker 1600 for HG00554_h1
+2026-03-09 14:14:54 - INFO - viterbi processed marker 1700 for HG00554_h1
+2026-03-09 14:14:56 - INFO - viterbi processed marker 1800 for HG00554_h1
+2026-03-09 14:14:59 - INFO - viterbi processed marker 1900 for HG00554_h1
+2026-03-09 14:15:02 - INFO - viterbi processed marker 2000 for HG00554_h1
+2026-03-09 14:15:05 - INFO - viterbi processed marker 2100 for HG00554_h1
+2026-03-09 14:15:08 - INFO - viterbi processed marker 2200 for HG00554_h1
+2026-03-09 14:15:11 - INFO - viterbi processed marker 2300 for HG00554_h1
+2026-03-09 14:15:14 - INFO - viterbi processed marker 2400 for HG00554_h1
+2026-03-09 14:15:17 - INFO - viterbi processed marker 2500 for HG00554_h1
+2026-03-09 14:15:21 - INFO - viterbi processed marker 2600 for HG00554_h1
+2026-03-09 14:15:24 - INFO - viterbi processed marker 2700 for HG00554_h1
+2026-03-09 14:15:27 - INFO - viterbi processed marker 2800 for HG00554_h1
+2026-03-09 14:15:29 - INFO - viterbi processed marker 2900 for HG00554_h1
+2026-03-09 14:15:33 - INFO - viterbi processed marker 3000 for HG00554_h1
+2026-03-09 14:15:36 - INFO - viterbi processed marker 3100 for HG00554_h1
+2026-03-09 14:15:39 - INFO - viterbi processed marker 3200 for HG00554_h1
+2026-03-09 14:15:43 - INFO - viterbi processed marker 3300 for HG00554_h1
+2026-03-09 14:15:46 - INFO - viterbi processed marker 3400 for HG00554_h1
+2026-03-09 14:15:49 - INFO - viterbi processed marker 3500 for HG00554_h1
+2026-03-09 14:15:52 - INFO - viterbi processed marker 3600 for HG00554_h1
+2026-03-09 14:15:55 - INFO - viterbi processed marker 3700 for HG00554_h1
+2026-03-09 14:15:58 - INFO - viterbi processed marker 3800 for HG00554_h1
+2026-03-09 14:15:59 - INFO - haplotype 19 (HG00554_h1) processed
+2026-03-09 14:17:51 - INFO - forward pass complete for HG00554_h2
+2026-03-09 14:19:46 - INFO - backward pass complete for HG00554_h2
+2026-03-09 14:19:58 - INFO - global ancestry calculated for HG00554_h2
+2026-03-09 14:20:01 - INFO - viterbi processed marker 100 for HG00554_h2
+2026-03-09 14:20:04 - INFO - viterbi processed marker 200 for HG00554_h2
+2026-03-09 14:20:07 - INFO - viterbi processed marker 300 for HG00554_h2
+2026-03-09 14:20:10 - INFO - viterbi processed marker 400 for HG00554_h2
+2026-03-09 14:20:13 - INFO - viterbi processed marker 500 for HG00554_h2
+2026-03-09 14:20:16 - INFO - viterbi processed marker 600 for HG00554_h2
+2026-03-09 14:20:19 - INFO - viterbi processed marker 700 for HG00554_h2
+2026-03-09 14:20:21 - INFO - viterbi processed marker 800 for HG00554_h2
+2026-03-09 14:20:24 - INFO - viterbi processed marker 900 for HG00554_h2
+2026-03-09 14:20:27 - INFO - viterbi processed marker 1000 for HG00554_h2
+2026-03-09 14:20:30 - INFO - viterbi processed marker 1100 for HG00554_h2
+2026-03-09 14:20:33 - INFO - viterbi processed marker 1200 for HG00554_h2
+2026-03-09 14:20:36 - INFO - viterbi processed marker 1300 for HG00554_h2
+2026-03-09 14:20:39 - INFO - viterbi processed marker 1400 for HG00554_h2
+2026-03-09 14:20:42 - INFO - viterbi processed marker 1500 for HG00554_h2
+2026-03-09 14:20:45 - INFO - viterbi processed marker 1600 for HG00554_h2
+2026-03-09 14:20:48 - INFO - viterbi processed marker 1700 for HG00554_h2
+2026-03-09 14:20:51 - INFO - viterbi processed marker 1800 for HG00554_h2
+2026-03-09 14:20:54 - INFO - viterbi processed marker 1900 for HG00554_h2
+2026-03-09 14:20:57 - INFO - viterbi processed marker 2000 for HG00554_h2
+2026-03-09 14:21:00 - INFO - viterbi processed marker 2100 for HG00554_h2
+2026-03-09 14:21:02 - INFO - viterbi processed marker 2200 for HG00554_h2
+2026-03-09 14:21:05 - INFO - viterbi processed marker 2300 for HG00554_h2
+2026-03-09 14:21:08 - INFO - viterbi processed marker 2400 for HG00554_h2
+2026-03-09 14:21:11 - INFO - viterbi processed marker 2500 for HG00554_h2
+2026-03-09 14:21:14 - INFO - viterbi processed marker 2600 for HG00554_h2
+2026-03-09 14:21:17 - INFO - viterbi processed marker 2700 for HG00554_h2
+2026-03-09 14:21:20 - INFO - viterbi processed marker 2800 for HG00554_h2
+2026-03-09 14:21:23 - INFO - viterbi processed marker 2900 for HG00554_h2
+2026-03-09 14:21:26 - INFO - viterbi processed marker 3000 for HG00554_h2
+2026-03-09 14:21:29 - INFO - viterbi processed marker 3100 for HG00554_h2
+2026-03-09 14:21:32 - INFO - viterbi processed marker 3200 for HG00554_h2
+2026-03-09 14:21:35 - INFO - viterbi processed marker 3300 for HG00554_h2
+2026-03-09 14:21:38 - INFO - viterbi processed marker 3400 for HG00554_h2
+2026-03-09 14:21:41 - INFO - viterbi processed marker 3500 for HG00554_h2
+2026-03-09 14:21:44 - INFO - viterbi processed marker 3600 for HG00554_h2
+2026-03-09 14:21:47 - INFO - viterbi processed marker 3700 for HG00554_h2
+2026-03-09 14:21:50 - INFO - viterbi processed marker 3800 for HG00554_h2
+2026-03-09 14:21:52 - INFO - haplotype 20 (HG00554_h2) processed
+2026-03-09 14:21:52 - INFO - all haplotypes processed
+2026-03-09 14:21:52 - INFO - results saved

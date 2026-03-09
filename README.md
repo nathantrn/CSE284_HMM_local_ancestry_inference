@@ -172,9 +172,48 @@ We evaluated compuational efficiency by measuring:
 
 For small subset test, FLARE performance:
 ```
-Wallclock Time      :  12 seconds
-End Time            :  09:56 PM PDT on 08 Mar 2026
-java -jar ../../../flare.jar     out=small_subset min-mac=22  68.11s user 3.11s system 521% cpu 13.646 total
+Wallclock Time      :  2 seconds
+End Time            :  10:19 AM PDT on 09 Mar 2026
+        3.19 real         8.06 user         0.87 sys
+           163606528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               60952  page reclaims
+                8854  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   5  signals received
+                3494  voluntary context switches
+               60919  involuntary context switches
+         40079284062  instructions retired
+         24032757521  cycles elapsed
+           140967296  peak memory footprint
+```
+
+Our performance:
+```
+     6928.40 real     17388.04 user     16373.03 sys
+           123551744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1279798  page reclaims
+               13496  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               34571  voluntary context switches
+           528245759  involuntary context switches
+     204341239799490  instructions retired
+      87112638393849  cycles elapsed
+           184332608  peak memory footprint
 ```
 - Scaling with number of markers
 to assess our tools computational efficiency relative to FLARE

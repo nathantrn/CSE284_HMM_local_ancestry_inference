@@ -2,13 +2,13 @@ Copyright (C) 2021-2025 Brian L. Browning
 Enter "java -jar flare.jar" to print a list of command line arguments
 
 Program             :  flare version 0.6.0 [616fcc9d4 03-Nov-2025]
-Start Time          :  09:55 PM PDT on 08 Mar 2026
+Start Time          :  10:19 AM PDT on 09 Mar 2026
 Max Memory          :  2048 MB
 
 Parameters
-  ref               :  ../small_subset_data_prep/reference_AFR_EUR_EAS.filtered.chr21.vcf.gz
+  ref               :  ../small_subset_data_prep/reference_AFR_EUR_EAS.filtered.subset.chr21.vcf.gz
   ref-panel         :  ../small_subset_data_prep/ref_panel.tsv
-  gt                :  ../small_subset_data_prep/admixed_AMR.filtered.chr21.vcf.gz
+  gt                :  ../small_subset_data_prep/admixed_AMR.filtered.subset.chr21.vcf.gz
   map               :  ../../hapMap/plink.GRCh37.map/plink.chr21.GRCh37.map
   out               :  small_subset
   array             :  false
@@ -24,7 +24,7 @@ Parameters
 Statistics
   reference samples :  45
   target samples    :  10
-  markers           :  43688
+  markers           :  438
 
-Wallclock Time      :  12 seconds
-End Time            :  09:56 PM PDT on 08 Mar 2026
+Wallclock Time      :  2 seconds
+End Time            :  10:19 AM PDT on 09 Mar 2026
