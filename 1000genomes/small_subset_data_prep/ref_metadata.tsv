@@ -1,0 +1,46 @@
+Sample name	Sex	Biosample ID	Population code	Population name	Superpopulation code	Superpopulation name	Population elastic ID	Data collections	panel
+HG02013	male	SAME1840396	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02051	male	SAME1839549	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01882	male	SAME122849	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01894	female	SAME1840357	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01914	male	SAME1839768	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02012	female	SAME1840403	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01988	male	SAME1840175	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01990	male	SAME1840235	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01956	female	SAME123978	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01879	male	SAME1839037	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG01886	female	SAME122847	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02107	male	SAME1840206	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02309	female	SAME1839525	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02323	male	SAME1839440	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG02330	male	SAME1839237	ACB	African Caribbean	AFR	African Ancestry	ACB	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	AFR
+HG00271	male	SAME123417	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00276	female	SAME123424	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00288	female	SAME1839246	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	EUR
+HG00290	male	SAME1839057	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	EUR
+HG00308	male	SAME124161	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,Geuvadis	EUR
+HG00310	male	SAME124338	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00315	female	SAME124335	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00327	female	SAME123791	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00334	female	SAME123981	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00339	female	SAME123991	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00341	male	SAME124922	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00346	female	SAME125264	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00353	female	SAME125120	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00358	male	SAME125126	FIN	Finnish	EUR	European Ancestry	FIN	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,Human Genome Structural Variation Consortium, Phase 3,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00360	male	SAME124539	FIN	Finnish,Finnish	EUR	European Ancestry,West Eurasia (SGDP)	FIN,FinnishSGDP	1000 Genomes on GRCh38,Simons Genome Diversity Project,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,Geuvadis	EUR
+HG00404	female	SAME123158	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release	EAS
+HG00409	male	SAME1840026	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	EAS
+HG00428	female	SAME122811	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00442	male	SAME124912	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00403	male	SAME123160	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release	EAS
+HG00473	female	SAME123338	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00410	female	SAME1839734	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release	EAS
+HG00422	female	SAME122809	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00446	female	SAME123880	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release	EAS
+HG00458	female	SAME125278	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release	EAS
+HG00472	male	SAME123339	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00478	male	SAME123335	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00500	male	SAME123363	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00524	male	SAME123724	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
+HG00531	female	SAME125381	CHS	Southern Han Chinese	EAS	East Asian Ancestry	CHS	1000 Genomes on GRCh38,1000 Genomes 30x on GRCh38,1000 Genomes phase 3 release,1000 Genomes phase 1 release,90 Han Chinese high coverage genomes	EAS
