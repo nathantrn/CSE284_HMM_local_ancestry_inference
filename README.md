@@ -108,38 +108,37 @@ Running our tool will return two dataframes:
 
 ## 📂 Dataset Descriptions
 
-## Reference Set
+### Source Dataset
+Samples for both the Reference panel and the Test set are derived from the 1000 Genomes Project Phase 3 dataset for chromosome 21. Variant data can be downloaded using:
 
-**(note to self: may use 1000 genomes as reference set since it may be easier to use)**
+```bash
+wget -c
+https://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/phase3/ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
 
-We downloaded high-coverage sequence data for chromosome 21 from the [Human Genome Diversity Project (HGDP)](ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/) (hg38). The reference panels were made from unadmixed individuals from the AFR and EUR superpopulations and individuals from the American superpopulation in the HGDP dataset. Note that American samples are not truly unadmixed due to the history of colonization and slave trade in the Americas, but for the scope of this project, we are treating these samples as unadmixed for building our reference panel.
-
-Prior to variant filtering and phasing, we merged the 1000 Genomes (**see test set**) and HGDP dataset.
+wget -c https://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/phase3/ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz.tbi
+```
+Metadata can be found in `/1000genomes/igsr_samples.tsv`
 
 ### Variant Filtering
 In line with Browning et al., 2023, we:
 * excluded variants that were not bi-allelic SNPs
 * excluded variants with >1% missingness 
 * required at least 5 copies of the minor allele 
-* Omitted Oceania due to its smaller size and lack of relevance for the 1000 Genomes data.
 
-### Phasing
-We phased the data using [Beagle 5.2](http://faculty.washington.edu/browning/beagle/beagle.html) with the [HapMap GRCh38 map](http://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip)
+### Reference Set
 
----
+The reference panel was constructed using unadmixed individuals from three superpopulations:
+- AFR (African Ancestry)
+- EUR (European Ancestry)
+- EAS (East Asian Ancestry)
 
-## Test Set
 
-The main test set consists of chromosome 21 (4.6 GB) from **admixed individuals** from the 1000 Genomes Project. These individuals **were not includued in the reference panel** and represent admixed individuals from the four populations of the AMR superpopulation (CLM, MXL, PEL, & PUR) which are expected to be admixed with AMR, AFR, and EUR local ancestry. 
+### Test Set
 
-Data was downloaded using:
-```bash
-wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz
+The admixed test set consists of individuals from the AMR (Admixed American) superpopulation in the 1000 Genomes dataset. These individuals are expected to contain mixed ancestry components from multiple superpopulations and are thus suitable for evaluating local ancestry inference. 
 
-wget -c https://ngs.sanger.ac.uk/production/hgdp/hgdp_wgs.20190516/hgdp_wgs.20190516.full.chr21.vcf.gz.tbi
-```
-
-We inferred local ancestry in the four AMR populations (CLM, MXL, PUR, PEL) with our HMM implementation and compared our output to FLARE for evaluation. Additionally, we inferred local ancestry for one population from the EAS and SAS superpopulations in the 1000 Genomes Dataset (EAS: JPT, SAS: PJL) to evaluate performance on samples where the true ancestry is absent from our model. We expect LAI to be uncertain/unstable for these populations not represented in our model.
+### Data Prep.ipynb
+`Data Prep.ipynb` provides a step-by-step guide to creating a subsetted Reference panel and Test set. Precomputed, ready-to-go files are housed in `/1000genomes/small_subset_data_prep/`
 
 ---
 
