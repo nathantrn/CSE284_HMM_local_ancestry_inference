@@ -270,15 +270,4 @@ Our toy simulation is provided for ground-truth validation to ensure correct imp
 
 Additionally, our reference panel contains admixed individuals for the AMR population due to the nature of European colonization and the African slave trade in the Americas. Since AMR individuals in the reference panel are admixed with AMR, AFR, and EUR ancestry, there will be lower accuracy for AMR ancestry because the panel is not 100% unadmixed American. 
 
----
 
-# FOR PEER REVIEW
-We would appreciate feedback on the following
-* Readability of the instructions for installing the tool, our goals & metrics
-* We were thinking of using only 1000 Genomes data, but if we are using 1000 Genomes for our reference and test, we were thinking of using AMR individuals (who are admixed with AFR, EUR, and possibly EAS), but these individuals also have AMR specific ancestry. How could we alter our approach to accomodate this, or should we stick with using HGDP for our reference and 1000 Genomes for our test?
-* Our HMM code (in `run_hmm.py`) is very slow, so any feedback on speeding it up would be great
-
-# REMAINING TASKS
-* Create our toy example and run our HMM LAI to assess correctness of implementation
-* Run FLARE default parameters on our test data
-* Compare FLARE and our HMM LAI tool performance
