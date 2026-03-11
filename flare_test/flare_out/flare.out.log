@@ -1,0 +1,30 @@
+Copyright (C) 2021-2025 Brian L. Browning
+Enter "java -jar flare.jar" to print a list of command line arguments
+
+Program             :  flare version 0.6.0 [616fcc9d4 03-Nov-2025]
+Start Time          :  11:21 PM PDT on 10 Mar 2026
+Max Memory          :  2048 MB
+
+Parameters
+  ref               :  flare.ref.vcf.gz
+  ref-panel         :  flare.ref.panel
+  gt                :  flare.gt.vcf.gz
+  map               :  flare.chr1.map
+  out               :  flare.out
+  array             :  false
+  min-maf           :  0.005
+  min-mac           :  50
+  probs             :  false
+  gen               :  10.0
+  em                :  true
+  update-p          :  false
+  nthreads          :  8
+  seed              :  -99999
+
+Statistics
+  reference samples :  300
+  target samples    :  2
+  markers           :  741
+
+Wallclock Time      :  2 seconds
+End Time            :  11:21 PM PDT on 10 Mar 2026

@@ -94,7 +94,7 @@ Our HMM LAI tool expects:
 * Phased reference VCF file
 * Tab-separated reference panel mapping samples in reference VCF to reference panel groups
 * Phased admixed VCF file
-* Genetic map file (cM), i.e. Hapmap [GRCh37](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) or [GRCh38](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/)
+* Genetic map file (cM), i.e. HapMap [GRCh37](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) or [GRCh38](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/), provided in the hapMap directory in this repo
 * Model parameters, retrieved from running the FLARE tool on the above files
 
 ### Expected Output
@@ -150,7 +150,7 @@ Because ground-truth local ancestry labels are unavailable in real datasets, we 
 
 We computed:
 * Overall concordance
-$$Concordance = \frac{\text{\# markers where ancestry matches FLARE}}{\text{total \# markers}}$$
+$$Concordance = \frac{\text{\\# markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 * Per-ancestry concordance
 Agreement computed separately for AFR, EUR, and AMR
 
@@ -169,8 +169,53 @@ Simulation will allow us to validate **(need to double check this!)**
 
 We evaluated compuational efficiency by measuring:
 - Total runtime
+For FLARE provided test data, FLARE took 2 seconds and had a peak memory footprint of around 120MB.
+```
+Wallclock Time      :  2 seconds
+End Time            :  11:21 PM PDT on 10 Mar 2026
+        2.84 real         6.77 user         0.82 sys
+           141848576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               54032  page reclaims
+                8844  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   3  signals received
+                3632  voluntary context switches
+               58393  involuntary context switches
+         31013993913  instructions retired
+         20515550207  cycles elapsed
+           119971136  peak memory footprint
+```
 
-For small subset test, FLARE performance:
+In comparison, our tool took about 6 hours and had a peak memory footprint of around 270MB.
+```
+    22367.63 real     32672.35 user     17126.53 sys
+           192794624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2020960  page reclaims
+               10299  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               12138  voluntary context switches
+           516968404  involuntary context switches
+     478662287689567  instructions retired
+     137733740758564  cycles elapsed
+           271488000  peak memory footprint
+```
+
+For small subset test, FLARE took 2 seconds and had a peak memory footprint of around 140MB.
 ```
 Wallclock Time      :  2 seconds
 End Time            :  10:19 AM PDT on 09 Mar 2026
@@ -194,7 +239,7 @@ End Time            :  10:19 AM PDT on 09 Mar 2026
            140967296  peak memory footprint
 ```
 
-Our performance:
+In comparison, our tool took around 2 hours and had a peak memory footprint of around 180MB.
 ```
      6928.40 real     17388.04 user     16373.03 sys
            123551744  maximum resident set size
