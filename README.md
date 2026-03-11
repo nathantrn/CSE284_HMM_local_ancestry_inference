@@ -167,8 +167,8 @@ Simulation will allow us to validate **(need to double check this!)**
 ---
 ## ⚡ Computational Performance
 
-We evaluated compuational efficiency by measuring:
-- Total runtime
+We evaluated compuational efficiency by measuring total runtime and peak memory usage.
+
 For FLARE provided test data, FLARE took 2 seconds and had a peak memory footprint of around 120MB.
 ```
 Wallclock Time      :  2 seconds
@@ -260,8 +260,6 @@ In comparison, our tool took around 2 hours and had a peak memory footprint of a
       87112638393849  cycles elapsed
            184332608  peak memory footprint
 ```
-- Scaling with number of markers
-to assess our tools computational efficiency relative to FLARE
 
 ---
 
