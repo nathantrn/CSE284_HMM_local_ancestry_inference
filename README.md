@@ -332,6 +332,6 @@ Our HMM LAI tool and FLARE are inference methods that do not provide true ground
 
 Our toy simulation is provided for ground-truth validation to ensure correct implementation.
 
-Additionally, our reference panel contains admixed individuals for the AMR population due to the nature of European colonization and the African slave trade in the Americas. Since AMR individuals in the reference panel are admixed with AMR, AFR, and EUR ancestry, there will be lower accuracy for AMR ancestry because the panel is not 100% unadmixed American. 
+HaploHMM is also much slower than FLARE due to its more naive implementation.
 
 
