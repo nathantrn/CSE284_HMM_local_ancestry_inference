@@ -1,4 +1,4 @@
-# HaploHMM 🦛🦛: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
+# 🦛 HaploHMM 🦛: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
 
@@ -112,7 +112,9 @@ Running our tool will return two dataframes:
 
 ### 1. Toy Example Comparison of Ground Truth
 
-To verify correctness of the HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL).
+The fundamental challenge with evaluating local ancestry inference is that in real data we don't know the true ancestry!!!
+
+To verify correctness of the HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL). 
 
 We generated 3 test cases using haptools:
 
@@ -134,12 +136,8 @@ We compared FLARE and HaploHMM's accuracy, which was calculated as:
 
 $$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
 
-Simulation will allow us to validate **(need to double check this!)**
-- Transition probability modeling
-- Emission probability calculations
-- Forward-backward inference correctness
 
-### 2. Flare Test Dataset
+### 2. Flare Test Dataset 🔥
 Our next test set comes from [FLARE's GitHub repository](https://github.com/browning-lab/flare/tree/master/test). This includes a reference set with three ancestries, Panel.A, Panel.B, and Panel.C, each panel consisting of 100 samples, for a total of 300 reference samples. There are two admixed samples, msp_300 and msp_301. Each sample has phased genotype data for 2000 variant positions.
 
 We ran FLARE and HaploHMM on this dataset, calculating concordance for each haplotype's local ancestry assignments and comparing global ancestry predictions between the two methods. Concordance was calculated as:
