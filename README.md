@@ -1,4 +1,4 @@
-# HaploHMM: A Hidden Markov Model Local Ancestry Inference (HMMLAI) Tool
+# HaploHMM: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
 
@@ -6,7 +6,7 @@
 
 ## 📖 Project Overview
 
-Our **HMM-LAI tool HaploHMM** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
+Our HMM-LAI tool **HaploHMM** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
 The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
@@ -131,6 +131,7 @@ We ran FLARE and HaploHMM given the following inputs:
 `toy_example/plink.chr21.GRCh38_renamed.map`
 
 We compared FLARE and HaploHMM's accuracy, which was calculated as:
+
 $$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
 
 Simulation will allow us to validate **(need to double check this!)**
@@ -139,9 +140,10 @@ Simulation will allow us to validate **(need to double check this!)**
 - Forward-backward inference correctness
 
 ### 2. Flare Test Dataset
-Our next test set comes from FLARE's GitHub repository. This includes a reference set with three ancestries, Panel.A, Panel.B, and Panel.C, each panel consisting of 100 samples, for a total of 300 reference samples. There are two admixed samples, msp_300 and msp_301. Each sample has phased genotype data for 2000 variant positions.
+Our next test set comes from [FLARE's GitHub repository](https://github.com/browning-lab/flare/tree/master/test). This includes a reference set with three ancestries, Panel.A, Panel.B, and Panel.C, each panel consisting of 100 samples, for a total of 300 reference samples. There are two admixed samples, msp_300 and msp_301. Each sample has phased genotype data for 2000 variant positions.
 
 We ran FLARE and HaploHMM on this dataset, calculating concordance for each haplotype's local ancestry assignments and comparing global ancestry predictions between the two methods. Concordance was calculated as:
+
 $$Concordance = \frac{\text{\\# markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 
 ### 3. 1000Genomes Dataset
@@ -153,7 +155,7 @@ https://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/phase3/ALL.chr21.phase3_sh
 
 wget -c https://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/phase3/ALL.chr21.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz.tbi
 ```
-Metadata can be found in `/1000genomes/igsr_samples.tsv`
+Metadata can be found in `1000genomes/igsr_samples.tsv`
 
 #### Variant Filtering
 In line with Browning et al., 2023, we:
@@ -174,7 +176,7 @@ The reference panel was constructed using unadmixed individuals from three super
 The admixed test set consists of individuals from the AMR (Admixed American) superpopulation in the 1000 Genomes dataset. These individuals are expected to contain mixed ancestry components from multiple superpopulations and are thus suitable for evaluating local ancestry inference. 
 
 #### Data Prep.ipynb
-`Data Prep.ipynb` provides a step-by-step guide to creating a subsetted Reference panel and Test set. Precomputed, ready-to-go files are housed in `/1000genomes/small_subset_data_prep/`
+`Data Prep.ipynb` provides a step-by-step guide to creating a subsetted Reference panel and Test set. Precomputed, ready-to-go files are housed in `1000genomes/small_subset_data_prep/`
 
 ### Global Ancestry Comparisons
 We created plots to compare global ancestry proportions for each of our test datasets. These can be found in the `plot_results.ipynb` notebook of this repo.
