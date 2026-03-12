@@ -2,7 +2,7 @@ Copyright (C) 2021-2025 Brian L. Browning
 Enter "java -jar flare.jar" to print a list of command line arguments
 
 Program             :  flare version 0.6.0 [616fcc9d4 03-Nov-2025]
-Start Time          :  12:22 AM UTC on 12 Mar 2026
+Start Time          :  12:26 AM UTC on 12 Mar 2026
 Max Memory          :  8192 MB
 
 Parameters
@@ -20,12 +20,11 @@ Parameters
   update-p          :  false
   nthreads          :  4
   seed              :  -99999
-  em-its            :  5
 
 Statistics
   reference samples :  30
   target samples    :  2
   markers           :  6222
 
-Wallclock Time      :  4 seconds
-End Time            :  12:22 AM UTC on 12 Mar 2026
+Wallclock Time      :  3 seconds
+End Time            :  12:26 AM UTC on 12 Mar 2026
