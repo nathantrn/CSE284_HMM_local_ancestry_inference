@@ -1,0 +1,30 @@
+Copyright (C) 2021-2025 Brian L. Browning
+Enter "java -jar flare.jar" to print a list of command line arguments
+
+Program             :  flare version 0.6.0 [616fcc9d4 03-Nov-2025]
+Start Time          :  06:54 PM PDT on 11 Mar 2026
+Max Memory          :  2048 MB
+
+Parameters
+  ref               :  ../1000G_chr21_subset_downsampled.vcf.gz
+  ref-panel         :  ../1000genomes_sampleinfo_subset.tsv
+  gt                :  ../toy_examples_haptools/toy_example_test.vcf.gz
+  map               :  ../plink.chr21.GRCh38_renamed.map
+  out               :  toy_example
+  array             :  false
+  min-maf           :  0.005
+  min-mac           :  14
+  probs             :  false
+  gen               :  10.0
+  em                :  true
+  update-p          :  false
+  nthreads          :  8
+  seed              :  -99999
+
+Statistics
+  reference samples :  30
+  target samples    :  6
+  markers           :  3094
+
+Wallclock Time      :  3 seconds
+End Time            :  06:54 PM PDT on 11 Mar 2026

@@ -168,6 +168,51 @@ Simulation will allow us to validate **(need to double check this!)**
 
 We evaluated compuational efficiency by measuring total runtime and peak memory usage.
 
+For the haptools simulated toy example, FLARE took 3 seconds and had a peak memory footprint of around 190MB.
+```
+Wallclock Time      :  3 seconds
+End Time            :  06:54 PM PDT on 11 Mar 2026
+        3.80 real        10.36 user         1.05 sys
+           212979712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               78405  page reclaims
+                9180  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                  17  signals received
+                3744  voluntary context switches
+               82157  involuntary context switches
+         52371653119  instructions retired
+         30715565997  cycles elapsed
+           192806656  peak memory footprint
+```
+In comparison, our tool took around 1 hour and had a peak memory footprint of around 120MB.
+```
+     3598.12 real      7267.81 user      9564.98 sys
+           104079360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              443381  page reclaims
+               10503  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                7913  voluntary context switches
+           601936903  involuntary context switches
+      98220162255567  instructions retired
+      44216095399232  cycles elapsed
+           119553920  peak memory footprint
+```
+
 For FLARE provided test data, FLARE took 2 seconds and had a peak memory footprint of around 120MB.
 ```
 Wallclock Time      :  2 seconds
