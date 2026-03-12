@@ -1,4 +1,4 @@
-# Implementing a Hidden Markov Model Local Ancestry Inference (HMM LAI) Tool
+# HaploHMM: A Hidden Markov Model Local Ancestry Inference (HMMLAI) Tool
 
 ### UCSD CSE 284 Winter 2026
 
@@ -6,7 +6,7 @@
 
 ## 📖 Project Overview
 
-Our **HMM-LAI tool** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
+Our **HMM-LAI tool HaploHMM** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
 The objective is to infer ancestry at each genomic position for admixed individuals using:
 * phased genotype data
@@ -18,14 +18,14 @@ Our implementation will replicate the basic functionality of [FLARE (Fast local 
 > *The American Journal of Human Genetics*
 
 In the FLARE model:
-- Hidden states represent ancestry labels (AFR/EUR/AMR)
+- Hidden states represent ancestry labels (ex. AFR/EUR/AMR) paired with reference haplotype labels
 - Transitions are driven by recombination distance
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
 ## 🚀 Installing and Running our HMM LAI Tool
 
-## 1. Clone this Github Repository
+## 1. Clone this GitHub Repository
 ```bash
 git clone https://github.com/nathantrn/CSE284_HMM_local_ancestry_inference.git
 cd CSE284_HMM_local_ancestry_inference
@@ -97,6 +97,8 @@ Our HMM LAI tool expects:
 * Genetic map file (cM), i.e. HapMap [GRCh37](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) or [GRCh38](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/), provided in the hapMap directory in this repo
 * Model parameters, retrieved from running the FLARE tool on the above files
 
+**IMPORTANT:** Ensure that the reference and admixed VCF files contain the same variant positions, otherwise HaploHMM will crash. If that isn't the case, you can run `bcftools isec` beforehand to ensure that the same locations are present in both files.
+
 ### Expected Output
 
 Running our tool will return two dataframes:
@@ -108,7 +110,41 @@ Running our tool will return two dataframes:
 
 ## 📂 Dataset Descriptions
 
-### Source Dataset
+### 1. Toy Example Comparison of Ground Truth
+
+To verify correctness of HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL).
+
+We generated 3 test cases:
+
+1. unadmixed individual (100% YRI)
+
+2. 2-way admixed individual (80% YRI, 20% IBS)
+
+3. 3-way admixed individual (40% YRI, 40% IBS, 20% PEL)
+
+We ran FLARE and HaploHMM given the following inputs:
+- A subsetted dataset of phased haplotypes from "unadmixed" YRI, IBS, and PEL individuals: `toy_example/1000G_chr21_subset_downsampled.vcf.gz`
+- A subsetted reference panel from the 1000 Genomes data for YRI, IBS, and PEL individuals: `toy_example/1000genomes_sampleinfo_subset.tsv`
+- A merged dataset of phased haplotypes from the 3 types of test cases:
+`toy_example/toy_examples_haptools/toy_example_test.vcf.gz`
+- A genetic map for chr21:
+`toy_example/plink.chr21.GRCh38_renamed.map`
+
+We compared FLARE and HaploHMM's accuracy, which was calculated as:
+$$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
+
+Simulation will allow us to validate **(need to double check this!)**
+- Transition probability modeling
+- Emission probability calculations
+- Forward-backward inference correctness
+
+### 2. Flare Test Dataset
+Our next test set comes from FLARE's GitHub repository. This includes a reference set with three ancestries, Panel.A, Panel.B, and Panel.C, each panel consisting of 100 samples, for a total of 300 reference samples. There are two admixed samples, msp_300 and msp_301. Each sample has phased genotype data for 2000 variant positions.
+
+We ran FLARE and HaploHMM on this dataset, calculating concordance for each haplotype's local ancestry assignments and comparing global ancestry predictions between the two methods. Concordance was calculated as:
+$$Concordance = \frac{\text{\\# markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
+
+### 3. 1000Genomes Dataset
 Samples for both the Reference panel and the Test set are derived from the 1000 Genomes Project Phase 3 dataset for chromosome 21. Variant data can be downloaded using:
 
 ```bash
@@ -119,13 +155,13 @@ wget -c https://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/phase3/ALL.chr21.p
 ```
 Metadata can be found in `/1000genomes/igsr_samples.tsv`
 
-### Variant Filtering
+#### Variant Filtering
 In line with Browning et al., 2023, we:
 * excluded variants that were not bi-allelic SNPs
 * excluded variants with >1% missingness 
 * required at least 5 copies of the minor allele 
 
-### Reference Set
+#### Reference Set
 
 The reference panel was constructed using unadmixed individuals from three superpopulations:
 - AFR (African Ancestry)
@@ -133,55 +169,21 @@ The reference panel was constructed using unadmixed individuals from three super
 - EAS (East Asian Ancestry)
 
 
-### Test Set
+#### Test Set
 
 The admixed test set consists of individuals from the AMR (Admixed American) superpopulation in the 1000 Genomes dataset. These individuals are expected to contain mixed ancestry components from multiple superpopulations and are thus suitable for evaluating local ancestry inference. 
 
-### Data Prep.ipynb
+#### Data Prep.ipynb
 `Data Prep.ipynb` provides a step-by-step guide to creating a subsetted Reference panel and Test set. Precomputed, ready-to-go files are housed in `/1000genomes/small_subset_data_prep/`
 
----
-
-## 📊 Evaluation Strategy 
-
-### 1. Comparison with FLARE (Reference Benchmark)
-Because ground-truth local ancestry labels are unavailable in real datasets, we evaluated our tool's performance against FLARE using default settings.
-
-We computed:
-* Overall concordance
-$$Concordance = \frac{\text{\\# markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
-* Per-ancestry concordance
-Agreement computed separately for AFR, EUR, and AMR
-
-
-### 2. Toy Example Comparison of Ground Truth
-
-To verify correctness of our HMM LAI tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL).
-
-We generated 3 test cases:
-
-1. unadmixed individual (100% YRI)
-
-2. 2-way admixed individual (80% YRI, 20% IBS)
-
-3. 3-way admixed individual (40% YRI, 40% IBS, 20% PEL)
-
-We ran FLARE and our LAI HMM given the following inputs:
-- A subsetted dataset of phased haplotypes from "unadmixed" YRI, IBS, and PEL individuals: "1000G_chr21_subset.vcf.gz"
-- A subsetted reference panel from the 1000 Genomes data for YRI, IBS, and PEL individuals: "1000genomes_sampleinfo_subset.tsv"
-
-We compared our FLARE and our LAI HMM's accuracy, which was calculated as:
-$$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
-
-Simulation will allow us to validate **(need to double check this!)**
-- Transition probability modeling
-- Emission probability calculations
-- Forward-backward inference correctness
+### Global Ancestry Comparisons
+We created plots to compare global ancestry proportions for each of our test datasets. These can be found in the `plot_results.ipynb` notebook of this repo.
 
 ---
+
 ## ⚡ Computational Performance
 
-We evaluated compuational efficiency by measuring total runtime and peak memory usage.
+We evaluated compuational efficiency by measuring total runtime and peak memory usage, using the `time` command line tool.
 
 For the haptools simulated toy example, FLARE took 3 seconds and had a peak memory footprint of around 190MB.
 ```
