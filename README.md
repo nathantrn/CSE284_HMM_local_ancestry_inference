@@ -23,7 +23,7 @@ In the FLARE model:
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
-## 🚀 Installing and Running our HMM LAI Tool
+## 🚀 Installing and Running HaploHMM
 
 ## 1. Clone this GitHub Repository
 ```bash
@@ -35,27 +35,27 @@ cd CSE284_HMM_local_ancestry_inference
 
 **Using pip🐥**
 ```python
-python3 -m venv hmm_lai_env
+python3 -m venv haploHMM
 ```
 
 OR 
 
 **Using conda 🐍**
 ```bash
-conda create --name hmm_lai_env
+conda create --name haploHMM
 ```
 
 ## Activate the environment
 **Using pip🐥**
 ```bash
-source hmm_lai_env/bin/activate
+source haploHMM/bin/activate
 ```
 
 OR 
 
 **Using conda 🐍**
 ```bash
-conda activate hmm_lai_env
+conda activate haploHMM
 ```
 
 ## 2. Install Dependecies
@@ -90,7 +90,7 @@ Our tool can take a few hours to run depending on the input vcf sizes. If you ar
 
 ### Input Data Requirements
 
-Our HMM LAI tool expects:
+HaploHMM expects:
 * Phased reference VCF file
 * Tab-separated reference panel mapping samples in reference VCF to reference panel groups
 * Phased admixed VCF file
@@ -112,9 +112,9 @@ Running our tool will return two dataframes:
 
 ### 1. Toy Example Comparison of Ground Truth
 
-To verify correctness of HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL).
+To verify correctness of the HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL).
 
-We generated 3 test cases:
+We generated 3 test cases using haptools:
 
 1. unadmixed individual (100% YRI)
 
