@@ -1,4 +1,4 @@
-# 🦛HaploHMM🦛: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
+# HaploHMM 🦛🦛: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
 
