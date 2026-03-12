@@ -167,11 +167,11 @@ We generated 3 test cases:
 3. 3-way admixed individual (40% YRI, 40% IBS, 20% PEL)
 
 We ran FLARE and our LAI HMM given the following inputs:
-- A ____ : "1000G_chr21_subset.vcf.gz"
-- A ____ : "1000genomes_sampleinfo_subset.tsv"
+- A subsetted dataset of phased haplotypes from "unadmixed" YRI, IBS, and PEL individuals: "1000G_chr21_subset.vcf.gz"
+- A subsetted reference panel from the 1000 Genomes data for YRI, IBS, and PEL individuals: "1000genomes_sampleinfo_subset.tsv"
 
 We compared our FLARE and our LAI HMM's accuracy, which was calculated as:
-$$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# total SNPs}}$$
+$$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
 
 Simulation will allow us to validate **(need to double check this!)**
 - Transition probability modeling
