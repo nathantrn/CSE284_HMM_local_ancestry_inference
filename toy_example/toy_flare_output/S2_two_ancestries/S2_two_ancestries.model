@@ -1,0 +1,29 @@
+# list of ancestries
+IBS	PEL	YRI
+
+# list of reference panels
+IBS	PEL	YRI
+
+# T: number of generations since admixture
+5.0867753
+
+# mu[i]: proportion of target genotypes with ancestry i
+0.0011655012	0.43509364	0.56374085
+
+
+# p[i][j]: probability that a model state haplotype is in reference panel j
+#          when the model state ancestry is i
+0.54311633	0.33473128	0.12215239
+0.3069814	0.6068289	0.08618965
+0.1710543	0.14611413	0.6828316
+
+# theta[i][j]: probability that a model state haplotype and the target
+#              haplotype carry different alleles when the model state haplotype
+#              is in reference panel j and the model state ancestry is i
+0.001807268	0.001807268	0.001807268
+0.001807268	0.001807268	0.001807268
+0.001807268	0.001807268	0.001807268
+
+# rho[i]: rate of the exponential IBD segment cM-length distribution when the
+#         most recent common ancestor precedes admixture and has ancestry i
+1412.9528	1315.1353	1675.0402
