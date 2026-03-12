@@ -1,10 +1,10 @@
-# HaploHMM: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
+# 🦛HaploHMM🦛: A Hidden Markov Model Local Ancestry Inference (HMM-LAI) Tool
 
 ### UCSD CSE 284 Winter 2026
 
-### Authors: Jonah Pacis, Safa Saeed, Nathan Tran
+### Authors: Jonah Pacis 🦦, Safa Saeed 🌻, Nathan Tran 🏓
 
-## 📖 Project Overview
+## Project Overview 🤓
 
 Our HMM-LAI tool **HaploHMM** implements an end-to-end **Hidden Markov Model (HMM)** approach for **local ancestry inference (LAI)** in admixed individuals. 
 
@@ -23,7 +23,7 @@ In the FLARE model:
 - Emissions are based on ancestry-specific allele frequencies estimated from a reference panel
 
 ---
-## 🚀 Installing and Running HaploHMM
+## Installing and Running HaploHMM
 
 ## 1. Clone this GitHub Repository
 ```bash
@@ -326,7 +326,7 @@ In comparison, our tool took around 2 hours and had a peak memory footprint of a
 
 ---
 
-## ⚠ Limitations of our approach
+## Limitations of our approach
 
 Our HMM LAI tool and FLARE are inference methods that do not provide true ground-truth ancestry labels. Hence, our reported concordance measures agreement with established approaches rather than absolute accuracy.
 
