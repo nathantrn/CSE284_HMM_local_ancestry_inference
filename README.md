@@ -185,7 +185,7 @@ We created plots to compare global ancestry proportions for each of our test dat
 
 We evaluated compuational efficiency by measuring total runtime and peak memory usage, using the `time` command line tool.
 
-For the haptools simulated toy example, FLARE took 3 seconds and had a peak memory footprint of around 190MB.
+For the haptools simulated toy example, FLARE took 3 seconds and had a peak memory footprint of around 180MB.
 ```
 Wallclock Time      :  3 seconds
 End Time            :  06:54 PM PDT on 11 Mar 2026
@@ -208,7 +208,7 @@ End Time            :  06:54 PM PDT on 11 Mar 2026
          30715565997  cycles elapsed
            192806656  peak memory footprint
 ```
-In comparison, our tool took around 1 hour and had a peak memory footprint of around 120MB.
+In comparison, our tool took around 1 hour and had a peak memory footprint of around 115MB.
 ```
      3598.12 real      7267.81 user      9564.98 sys
            104079360  maximum resident set size
@@ -230,7 +230,7 @@ In comparison, our tool took around 1 hour and had a peak memory footprint of ar
            119553920  peak memory footprint
 ```
 
-For FLARE provided test data, FLARE took 2 seconds and had a peak memory footprint of around 120MB.
+For FLARE provided test data, FLARE took 2 seconds and had a peak memory footprint of around 115MB.
 ```
 Wallclock Time      :  2 seconds
 End Time            :  11:21 PM PDT on 10 Mar 2026
@@ -254,7 +254,7 @@ End Time            :  11:21 PM PDT on 10 Mar 2026
            119971136  peak memory footprint
 ```
 
-In comparison, our tool took about 6 hours and had a peak memory footprint of around 270MB.
+In comparison, our tool took about 6 hours and had a peak memory footprint of around 260MB.
 ```
     22367.63 real     32672.35 user     17126.53 sys
            192794624  maximum resident set size
@@ -276,7 +276,7 @@ In comparison, our tool took about 6 hours and had a peak memory footprint of ar
            271488000  peak memory footprint
 ```
 
-For small subset test, FLARE took 2 seconds and had a peak memory footprint of around 140MB.
+For small subset test, FLARE took 2 seconds and had a peak memory footprint of around 135MB.
 ```
 Wallclock Time      :  2 seconds
 End Time            :  10:19 AM PDT on 09 Mar 2026
@@ -300,7 +300,7 @@ End Time            :  10:19 AM PDT on 09 Mar 2026
            140967296  peak memory footprint
 ```
 
-In comparison, our tool took around 2 hours and had a peak memory footprint of around 180MB.
+In comparison, our tool took around 2 hours and had a peak memory footprint of around 175MB.
 ```
      6928.40 real     17388.04 user     16373.03 sys
            123551744  maximum resident set size
