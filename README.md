@@ -112,17 +112,17 @@ Running our tool will return two dataframes:
 
 ### 1. Toy Example Comparison of Ground Truth
 
-The fundamental challenge with evaluating local ancestry inference is that in real data we don't know the true ancestry!!!
+The fundamental challenge with evaluating local ancestry inference is that with real data we don't know the true ancestry for each segment of the genome!
 
-To verify correctness of the HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL). 
+To verify correctness and accuracy of the HaploHMM tool, we simulated small synthetic admixed datasets with known local ancestry labels (AFR: YRI, EUR: IBS, AMR: PEL). 
 
-We generated 3 test cases using haptools:
+We generated 3 test cases, 2 samples each, using haptools:
 
-1. unadmixed individual (100% YRI)
+1. unadmixed individuals (100% YRI)
 
-2. 2-way admixed individual (80% YRI, 20% IBS)
+2. 2-way admixed individuals (80% YRI, 20% IBS)
 
-3. 3-way admixed individual (40% YRI, 40% IBS, 20% PEL)
+3. 3-way admixed individuals (40% YRI, 40% IBS, 20% PEL)
 
 We ran FLARE and HaploHMM given the following inputs:
 - A subsetted dataset of phased haplotypes from "unadmixed" YRI, IBS, and PEL individuals: `toy_example/1000G_chr21_subset_downsampled.vcf.gz`
@@ -131,11 +131,13 @@ We ran FLARE and HaploHMM given the following inputs:
 `toy_example/toy_examples_haptools/toy_example_test.vcf.gz`
 - A genetic map for chr21:
 `toy_example/plink.chr21.GRCh38_renamed.map`
+All inputs are already in the [toy_flare_output](/toy_example) folder. 
 
 We compared FLARE and HaploHMM's accuracy, which was calculated as:
 
 $$Accuracy = \frac{\text{\\# correctly assigned SNPs}}{\text{total \\# SNPs}}$$
 
+Analysis of FLARE and HaploHMM performance on synthetic data can be viewed in 
 
 ### 2. Flare Test Dataset 🔥
 Our next test set comes from [FLARE's GitHub repository](https://github.com/browning-lab/flare/tree/master/test). This includes a reference set with three ancestries, Panel.A, Panel.B, and Panel.C, each panel consisting of 100 samples, for a total of 300 reference samples. There are two admixed samples, msp_300 and msp_301. Each sample has phased genotype data for 2000 variant positions.
