@@ -145,7 +145,7 @@ We ran FLARE and HaploHMM given the following inputs:
 `toy_example/toy_examples_haptools/toy_example_test.vcf.gz`
 - A genetic map for chr21:
 `toy_example/plink.chr21.GRCh38_renamed.map`
-All inputs are already in the [toy_flare_output](/toy_example) folder. 
+All inputs are already in the [toy_example](/toy_example) folder. 
 
 We compared FLARE and HaploHMM's accuracy, which was calculated as:
 
