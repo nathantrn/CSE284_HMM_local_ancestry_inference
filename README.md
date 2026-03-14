@@ -334,4 +334,6 @@ Our toy simulation is provided for ground-truth validation to ensure correct imp
 
 HaploHMM is also much slower than FLARE due to its more naive implementation.
 
+### NOTE:
+We know Generative AI frequently generates emojis in README.md's. All of our emojis were human-generated — we just like decorating :)
 
