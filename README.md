@@ -106,6 +106,20 @@ Running our tool will return two dataframes:
 * `ancestry_haplotypes_results.txt`, which contains the per-SNP ancestry predictions for each haplotype in the admixed samples (derived from Viterbi algorithm)
 * `global_ancestry_results.txt`, which contains the global ancestry proportions for each admixed samples (derived from forward-backward algorithm)
 
+## Recommended Test
+HaploHMM can take a long time to run, even on small datasets. Our fastest test case was the toy example, which took about 1 hour to run. If you would like to try running the tool, run the following commands after cloning this directory and installing the required dependencies. We include `caffeinate` before the Python command, which prevents the computer from sleeping while running the command on macOS. The FLARE model file is already provided.  
+
+```
+cd CSE284_HMM_local_ancestry_inference/toy_example
+mkdir my_haploHMM_output && cd my_haploHMM_output
+caffeinate python ../../run_hmm.py \
+    ../1000G_chr21_subset_downsampled.vcf.gz \
+    ../1000genomes_sampleinfo_subset.tsv \
+    ../toy_examples_haptools/toy_example_test.vcf.gz \
+    ../plink.chr21.GRCh38_renamed.map \
+    ../flare_output/toy_example.model \
+    -o toy_example
+```
 ---
 
 ## 📂 Dataset Descriptions
