@@ -110,7 +110,7 @@ Running our tool will return two dataframes:
 
 ## 📂 Dataset Descriptions
 
-### 1. Toy Example Comparison of Ground Truth
+### 1. Toy Example Comparison of Ground Truth 🧸
 
 The fundamental challenge with evaluating local ancestry inference is that with real data we don't know the true ancestry for each segment of the genome!
 
@@ -146,7 +146,7 @@ We ran FLARE and HaploHMM on this dataset, calculating concordance for each hapl
 
 $$Concordance = \frac{\text{\\# markers where ancestry matches FLARE}}{\text{total \\# markers}}$$
 
-### 3. 1000Genomes Dataset
+### 3. 1000Genomes Dataset 🧬
 Samples for both the Reference panel and the Test set are derived from the 1000 Genomes Project Phase 3 dataset for chromosome 21. Variant data can be downloaded using:
 
 ```bash
