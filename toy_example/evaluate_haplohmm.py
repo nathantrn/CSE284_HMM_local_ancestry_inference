@@ -1,4 +1,6 @@
 """
+HaploHMM gives out outputs slightly differently than FLARE, such as consolidating both samples into one output file instead of spreading them out.
+
 evaluate_haplohmm.py
 Compares haploHMM ancestry calls against haptools ground truth breakpoints
 at the population level (YRI, IBS, PEL)
@@ -50,8 +52,7 @@ def parse_bp(bp_file: Path) -> dict:
                 continue
             parts = line.split("\t")
             if len(parts) == 1:
-                # Header row: "Sample_{num}_{hap_idx}"
-                tokens  = parts[0].split("_")   # ["Sample", "1", "1"]
+                tokens  = parts[0].split("_")  
                 num     = int(tokens[1])
                 hap_idx = tokens[2]
                 hap     = "hap1" if hap_idx == "1" else "hap2"
@@ -78,13 +79,10 @@ def bp_to_per_snp(segments: list, positions: np.ndarray) -> list:
 def load_haplohmm(txt_path: Path) -> tuple[np.ndarray, pd.DataFrame]:
     raw = pd.read_csv(txt_path, sep="\t")
     positions = raw["POS"].values
-
-    # Translate integer indices to population strings
     hap_cols = [c for c in raw.columns if c not in ("CHROM", "POS")]
     df = raw[hap_cols].copy()
     for col in hap_cols:
         df[col] = df[col].map(ANCESTRY_MAP).fillna("?")
-
     return positions, df
 
 
@@ -123,8 +121,6 @@ def evaluate(scenario: str, positions: np.ndarray, df: pd.DataFrame,
             correct = sum(t == f for t, f in zip(truth, flare_calls))
             total   = len(truth)
             print(f"    {hap_key}: {correct}/{total} = {correct/total*100:.1f}%")
-
-            # Per-population breakdown with misclassification info
             for pop in pops:
                 idx = [i for i, t in enumerate(truth) if t == pop]
                 if not idx:
